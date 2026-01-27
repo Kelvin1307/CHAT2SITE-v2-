@@ -7,7 +7,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 llm = ChatGroq(
-    groq_api_key="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",
+    groq_api_key=os.getenv("GROQ_API_KEY"),
     model_name="openai/gpt-oss-20b",
     temperature=0
 )

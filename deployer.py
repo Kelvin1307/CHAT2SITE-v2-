@@ -3,8 +3,8 @@ import os
 import subprocess
 import uuid
 
-SITE_ID="44a57d88-e7aa-4ffe-9b50-78897fdf25fb"
-NETLIFY_AUTH_TOKEN = "nfp_qXLJNASVvn2SKS7w7DLm6srM97h5YwSE939f"
+SITE_ID = os.getenv("SITE_ID")
+NETLIFY_AUTH_TOKEN = os.getenv("NETLIFY_AUTH_TOKEN")
 
 def deploy_site(folder: str) -> str:
     site_name = f"chat2site-{uuid.uuid4().hex[:6]}"
