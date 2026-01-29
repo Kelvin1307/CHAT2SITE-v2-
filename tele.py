@@ -1,5 +1,6 @@
 # tele.py
 import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
@@ -7,6 +8,10 @@ from extractor import extract_website_json
 from renderer import render_portfolio_site
 from deployer import deploy_site
 
+load_dotenv()
+token = os.getenv("TELEGRAM_BOT_TOKEN")
+if not token:
+    raise RuntimeError("Missing TELEGRAM_BOT_TOKEN")
 SYSTEM_START = (
     "👋 I’ll help you create a business website.\n"
     "First — what’s your business name?"
@@ -47,7 +52,7 @@ def publish(update: Update, context: CallbackContext):
     # --- STEP 4: Respond ---
     update.message.reply_text(f"🎉 Your website is live:\n{live_url}")
 
-def run_bot(token: str):
+def main():
     updater = Updater(token, use_context=True)
     dp = updater.dispatcher
 
@@ -57,3 +62,6 @@ def run_bot(token: str):
     print("🤖 Chat2Site Telegram bot running...")
     updater.start_polling()
     updater.idle()
+
+if __name__ == "__main__":
+    main()

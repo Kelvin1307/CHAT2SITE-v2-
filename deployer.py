@@ -1,16 +1,95 @@
-# deployer.py
 import os
-import subprocess
 import uuid
+from dotenv import load_dotenv
+import hashlib
+import requests
+from pathlib import Path
 
-SITE_ID = os.getenv("SITE_ID")
+load_dotenv()
+
+# keep existing env variable names (unchanged)
+SITE_ID = os.getenv("SITE_ID")  # optional fallback
 NETLIFY_AUTH_TOKEN = os.getenv("NETLIFY_AUTH_TOKEN")
 
-def deploy_site(folder: str) -> str:
+NETLIFY_API = "https://api.netlify.com/api/v1"
+
+
+def _headers():
+    return {
+        "Authorization": f"Bearer {NETLIFY_AUTH_TOKEN}",
+        "Content-Type": "application/json"
+    }
+
+
+def _sha1(path: Path) -> str:
+    h = hashlib.sha1()
+    with open(path, "rb") as f:
+        h.update(f.read())
+    return h.hexdigest()
+
+
+def _create_site() -> dict:
     site_name = f"chat2site-{uuid.uuid4().hex[:6]}"
 
-    subprocess.run([
-    r"C:\Users\TIMOTHY KELVIN M\AppData\Roaming\npm\netlify.cmd",
-    "deploy",  "--prod", "--dir", folder, "--site", SITE_ID, "--auth", NETLIFY_AUTH_TOKEN], check=True)
+    r = requests.post(
+        f"{NETLIFY_API}/sites",
+        headers=_headers(),
+        json={"name": site_name}
+    )
+    r.raise_for_status()
+    return r.json()
 
-    return f"https://{site_name}.netlify.app"
+
+def deploy_site(folder: str) -> str:
+    """
+    Deploys a folder to Netlify and returns the live URL
+    """
+
+    # 1️⃣ Create site automatically
+    site = _create_site()
+    site_id = site["id"]
+    site_url = site["url"]
+
+    # 2️⃣ Collect files + hashes
+    files = {}
+    base = Path(folder)
+
+    for path in base.rglob("*"):
+        if path.is_file():
+            rel = "/" + str(path.relative_to(base)).replace("\\", "/")
+            files[rel] = _sha1(path)
+
+    # 3️⃣ Create deploy
+    r = requests.post(
+        f"{NETLIFY_API}/sites/{site_id}/deploys",
+        headers=_headers(),
+        json={"files": files}
+    )
+    r.raise_for_status()
+    deploy = r.json()
+
+    deploy_id = deploy["id"]
+    required = deploy.get("required", [])
+
+    # reverse map: hash → filepath
+    hash_to_path = {v: k for k, v in files.items()}
+
+    for file_hash in required:
+        rel_path = hash_to_path.get(file_hash)
+        if not rel_path:
+            continue
+
+        full_path = base / rel_path.lstrip("/")
+        if not full_path.exists():
+            continue
+
+        with open(full_path, "rb") as f:
+            requests.put(
+                f"{NETLIFY_API}/deploys/{deploy_id}/files/{file_hash}",
+                headers={"Authorization": f"Bearer {NETLIFY_AUTH_TOKEN}"},
+                data=f.read()
+            )
+
+
+    return site_url
+
