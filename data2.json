@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "name": ""
+  },
+  "topbar": {
+    "message": ""
+  },
+  "cart": {
+    "count": 0
+  },
+  "nav": [
+    {
+      "label": "",
+      "link": ""
+    }
+  ],
+  "hero": {
+    "title": "",
+    "subtitle": "",
+    "image": "",
+    "cta": {
+      "text": "",
+      "link": ""
+    }
+  },
+  "categories": [
+    {
+      "id": "",
+      "name": "",
+      "image": ""
+    }
+  ],
+  "products": [
+    {
+      "id": "",
+      "name": "",
+      "description": "",
+      "price": 0,
+      "currency": "",
+      "image": "",
+      "category": "",
+      "rating": 0,
+      "features": [
+        ""
+      ]
+    }
+  ],
+  "services": {
+    "title": "",
+    "description": "",
+    "features": [
+      ""
+    ],
+    "stats": {
+      "cakes_baked": 0,
+      "happy_customers": 0,
+      "years_in_business": 0
+    }
+  },
+  "deals": [
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "discount": 0,
+      "image": ""
+    }
+  ],
+  "footer": {
+    "about": "",
+    "links": [],
+    "social": [],
+    "copyright": ""
+  }
+}

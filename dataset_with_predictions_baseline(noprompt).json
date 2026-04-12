@@ -1,0 +1,1253 @@
+[
+  {
+    "conversation": "User: I own a bakery called Sweet Crumbs in Chennai. User: We make cakes, cupcakes, and wedding cakes. User: Contact us at sweetcrumbs@gmail.com or 9876543210.",
+    "ground_truth": {
+      "business_name": "Sweet Crumbs",
+      "business_type": "Bakery",
+      "services": [
+        "Cakes",
+        "Cupcakes",
+        "Wedding cakes"
+      ],
+      "city": "Chennai",
+      "email": "sweetcrumbs@gmail.com",
+      "phone": "9876543210"
+    },
+    "prediction": {
+      "business_name": "Sweet Crumbs",
+      "business_type": "",
+      "services": [
+        "cakes",
+        "cupcakes",
+        "wedding cakes"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a beauty salon named Glow Studio in Bangalore. User: We offer haircuts, facials, and bridal makeup. User: Reach us at glowstudio@gmail.com. User: Phone is 9123456780.",
+    "ground_truth": {
+      "business_name": "Glow Studio",
+      "business_type": "Salon",
+      "services": [
+        "Haircuts",
+        "Facials",
+        "Bridal makeup"
+      ],
+      "city": "Bangalore",
+      "email": "glowstudio@gmail.com",
+      "phone": "9123456780"
+    },
+    "prediction": {
+      "business_name": "Glow Studio",
+      "business_type": "",
+      "services": [
+        "haircuts",
+        "facials",
+        "bridal makeup"
+      ],
+      "city": "Bangalore",
+      "email": "glowstudio@gmail.com",
+      "phone": "9123456780"
+    }
+  },
+  {
+    "conversation": "User: My gym is called Iron Core Fitness in Hyderabad. User: We provide weight training, personal coaching, and cardio programs. User: Email ironcore@gmail.com and call 9988776655.",
+    "ground_truth": {
+      "business_name": "Iron Core Fitness",
+      "business_type": "Gym",
+      "services": [
+        "Weight training",
+        "Personal coaching",
+        "Cardio programs"
+      ],
+      "city": "Hyderabad",
+      "email": "ironcore@gmail.com",
+      "phone": "9988776655"
+    },
+    "prediction": {
+      "business_name": "",
+      "business_type": "",
+      "services": [
+        "weight training",
+        "personal coaching",
+        "cardio programs"
+      ],
+      "city": "Hyderabad",
+      "email": "ironcore@gmail.com",
+      "phone": "9988776655"
+    }
+  },
+  {
+    "conversation": "User: I am a freelance web developer named Rahul based in Mumbai. User: I build websites, landing pages, and e-commerce stores. User: Contact me at rahul.dev@gmail.com.",
+    "ground_truth": {
+      "business_name": "Rahul",
+      "business_type": "Freelance Web Developer",
+      "services": [
+        "Websites",
+        "Landing pages",
+        "E-commerce stores"
+      ],
+      "city": "Mumbai",
+      "email": "rahul.dev@gmail.com",
+      "phone": ""
+    },
+    "prediction": {
+      "business_name": "",
+      "business_type": "",
+      "services": [
+        "websites",
+        "landing pages",
+        "e-commerce stores"
+      ],
+      "city": "Mumbai, India",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a dental clinic called SmileCare in Delhi. User: We offer cleaning, braces, and root canal treatments. User: Call 9012345678 or email smilecare@gmail.com.",
+    "ground_truth": {
+      "business_name": "SmileCare",
+      "business_type": "Dental Clinic",
+      "services": [
+        "Cleaning",
+        "Braces",
+        "Root canal treatments"
+      ],
+      "city": "Delhi",
+      "email": "smilecare@gmail.com",
+      "phone": "9012345678"
+    },
+    "prediction": {
+      "business_name": "SmileCare",
+      "business_type": "",
+      "services": [
+        "cleaning",
+        "braces",
+        "root canal treatments"
+      ],
+      "city": "Delhi",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a restaurant called Spice Route in Chennai. User: We serve South Indian and North Indian dishes. User: Contact spice@gmail.com or 9871234560.",
+    "ground_truth": {
+      "business_name": "Spice Route",
+      "business_type": "Restaurant",
+      "services": [
+        "South Indian dishes",
+        "North Indian dishes"
+      ],
+      "city": "Chennai",
+      "email": "spice@gmail.com",
+      "phone": "9871234560"
+    },
+    "prediction": {
+      "business_name": "Spice Route",
+      "business_type": "",
+      "services": [],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I am a photographer named LensCraft based in Pune. User: I do wedding shoots, portraits, and events. User: Email lenscraft@gmail.com.",
+    "ground_truth": {
+      "business_name": "LensCraft",
+      "business_type": "Photography",
+      "services": [
+        "Wedding shoots",
+        "Portraits",
+        "Events"
+      ],
+      "city": "Pune",
+      "email": "lenscraft@gmail.com",
+      "phone": ""
+    },
+    "prediction": {
+      "business_name": "LensCraft",
+      "business_type": "",
+      "services": [
+        "wedding shoots",
+        "portraits",
+        "events"
+      ],
+      "city": "Pune",
+      "email": "lenscraft@gmail.com",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a coaching center called Bright Minds in Chennai. User: We teach math, physics, and chemistry. User: Call us at 9001122334.",
+    "ground_truth": {
+      "business_name": "Bright Minds",
+      "business_type": "Coaching Center",
+      "services": [
+        "Math",
+        "Physics",
+        "Chemistry"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": "9001122334"
+    },
+    "prediction": {
+      "business_name": "Bright Minds",
+      "business_type": "",
+      "services": [
+        "math",
+        "physics",
+        "chemistry"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": "9001122334"
+    }
+  },
+  {
+    "conversation": "User: I own a boutique called Style Hub in Bangalore. User: We sell dresses, ethnic wear, and accessories. User: Email stylehub@gmail.com and phone 9876501234.",
+    "ground_truth": {
+      "business_name": "Style Hub",
+      "business_type": "Boutique",
+      "services": [
+        "Dresses",
+        "Ethnic wear",
+        "Accessories"
+      ],
+      "city": "Bangalore",
+      "email": "stylehub@gmail.com",
+      "phone": "9876501234"
+    },
+    "prediction": {
+      "business_name": "Style Hub",
+      "business_type": "",
+      "services": [],
+      "city": "Bangalore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: Our startup is called DataNest based in Hyderabad. User: We provide AI solutions, data analytics, and automation. User: Contact datanest@gmail.com.",
+    "ground_truth": {
+      "business_name": "DataNest",
+      "business_type": "Tech Startup",
+      "services": [
+        "AI solutions",
+        "Data analytics",
+        "Automation"
+      ],
+      "city": "Hyderabad",
+      "email": "datanest@gmail.com",
+      "phone": ""
+    },
+    "prediction": {
+      "business_name": "",
+      "business_type": "",
+      "services": [
+        "AI solutions",
+        "data analytics",
+        "automation"
+      ],
+      "city": "Hyderabad",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a clothing store called Trendy Threads in Trichy. User: We sell casual wear, formal wear, and accessories. User: contact us at trendythreads@gmail.com or 9050999097.",
+    "ground_truth": {
+      "business_name": "Trendy Threads",
+      "business_type": "Clothing Store",
+      "services": [
+        "Casual wear",
+        "Formal wear",
+        "Accessories"
+      ],
+      "city": "Trichy",
+      "email": "trendythreads@gmail.com",
+      "phone": "9050999097"
+    },
+    "prediction": {
+      "business_name": "Trendy Threads",
+      "business_type": "",
+      "services": [],
+      "city": "Trichy",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a photography business called Capture Moments in Salem. User: We do wedding shoots, portraits, and event photography. User: contact us at capturemoments@gmail.com or 9345678901.",
+    "ground_truth": {
+      "business_name": "Capture Moments",
+      "business_type": "Photography",
+      "services": [
+        "Wedding shoots",
+        "Portraits",
+        "Event photography"
+      ],
+      "city": "Salem",
+      "email": "capturemoments@gmail.com",
+      "phone": "9345678901"
+    },
+    "prediction": {
+      "business_name": "Capture Moments",
+      "business_type": "",
+      "services": [
+        "wedding shoots",
+        "portraits",
+        "event photography"
+      ],
+      "city": "Salem",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a tuition center called Bright Minds Academy in Chennai. User: We teach Maths, Science, and English for school students. User: contact us at brightminds@gmail.com or 9012345678.",
+    "ground_truth": {
+      "business_name": "Bright Minds Academy",
+      "business_type": "Tuition Center",
+      "services": [
+        "Maths",
+        "Science",
+        "English"
+      ],
+      "city": "Chennai",
+      "email": "brightminds@gmail.com",
+      "phone": "9012345678"
+    },
+    "prediction": {
+      "business_name": "Bright Minds Academy",
+      "business_type": "Tuition Center",
+      "services": [
+        "Maths",
+        "Science",
+        "English"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own an electronics store called Tech World in Tirunelveli. User: We sell mobiles, laptops, and accessories. User: contact us at techworld@gmail.com or 8899001122.",
+    "ground_truth": {
+      "business_name": "Tech World",
+      "business_type": "Electronics Shop",
+      "services": [
+        "Mobiles",
+        "Laptops",
+        "Accessories"
+      ],
+      "city": "Tirunelveli",
+      "email": "techworld@gmail.com",
+      "phone": "8899001122"
+    },
+    "prediction": {
+      "business_name": "Tech World",
+      "business_type": "",
+      "services": [],
+      "city": "Tirunelveli",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a travel agency called Happy Trails in Pondicherry. User: We offer tour packages, flight booking, and hotel reservations. User: contact us at happytrails@gmail.com or 9786543210.",
+    "ground_truth": {
+      "business_name": "Happy Trails",
+      "business_type": "Travel Agency",
+      "services": [
+        "Tour packages",
+        "Flight booking",
+        "Hotel reservations"
+      ],
+      "city": "Pondicherry",
+      "email": "happytrails@gmail.com",
+      "phone": "9786543210"
+    },
+    "prediction": {
+      "business_name": "Happy Trails",
+      "business_type": "",
+      "services": [
+        "tour packages",
+        "flight booking",
+        "hotel reservations"
+      ],
+      "city": "Pondicherry",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a pet shop called Pet Paradise in Madurai. User: We sell pet food, accessories, and grooming products. User: contact us at petparadise@gmail.com or 9654321870.",
+    "ground_truth": {
+      "business_name": "Pet Paradise",
+      "business_type": "Pet Shop",
+      "services": [
+        "Pet food",
+        "Accessories",
+        "Grooming products"
+      ],
+      "city": "Madurai",
+      "email": "petparadise@gmail.com",
+      "phone": "9654321870"
+    },
+    "prediction": {
+      "business_name": "Pet Paradise",
+      "business_type": "",
+      "services": [],
+      "city": "Madurai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run an interior design business called Dream Spaces in Coimbatore. User: We design homes, offices, and modular kitchens. User: contact us at dreamspaces@gmail.com or 9123987654.",
+    "ground_truth": {
+      "business_name": "Dream Spaces",
+      "business_type": "Interior Design",
+      "services": [
+        "Home design",
+        "Office design",
+        "Modular kitchens"
+      ],
+      "city": "Coimbatore",
+      "email": "dreamspaces@gmail.com",
+      "phone": "9123987654"
+    },
+    "prediction": {
+      "business_name": "Dream Spaces",
+      "business_type": "",
+      "services": [
+        "homes",
+        "offices",
+        "modular kitchens"
+      ],
+      "city": "Coimbatore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a car service center called AutoCare Hub in Chennai. User: We provide car repair, servicing, and washing. User: contact us at autocarehub@gmail.com or 9001122334.",
+    "ground_truth": {
+      "business_name": "AutoCare Hub",
+      "business_type": "Car Service",
+      "services": [
+        "Car repair",
+        "Servicing",
+        "Washing"
+      ],
+      "city": "Chennai",
+      "email": "autocarehub@gmail.com",
+      "phone": "9001122334"
+    },
+    "prediction": {
+      "business_name": "AutoCare Hub",
+      "business_type": "",
+      "services": [
+        "car repair",
+        "servicing",
+        "washing"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a bookstore called Book Haven in Tirupathur. User: We sell novels, academic books, and stationery. User: contact us at bookhaven@gmail.com or 9811223344.",
+    "ground_truth": {
+      "business_name": "Book Haven",
+      "business_type": "Bookstore",
+      "services": [
+        "Novels",
+        "Academic books",
+        "Stationery"
+      ],
+      "city": "Tirupathur",
+      "email": "bookhaven@gmail.com",
+      "phone": "9811223344"
+    },
+    "prediction": {
+      "business_name": "",
+      "business_type": "",
+      "services": [],
+      "city": "Tirupathur",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a digital marketing agency called Growth Hackers in Chithambaram. User: We offer SEO, social media marketing, and ads management. User: contact us at growthhackers@gmail.com or 9332211445.",
+    "ground_truth": {
+      "business_name": "Growth Hackers",
+      "business_type": "Digital Marketing",
+      "services": [
+        "SEO",
+        "Social media marketing",
+        "Ads management"
+      ],
+      "city": "Chithambaram",
+      "email": "growthhackers@gmail.com",
+      "phone": "9332211445"
+    },
+    "prediction": {
+      "business_name": "Growth Hackers",
+      "business_type": "",
+      "services": [
+        "SEO",
+        "Social Media Marketing",
+        "Ads Management"
+      ],
+      "city": "Chithambaram",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a flower shop called Blooming Petals in Tirupati. User: We sell fresh flowers, bouquets, and garlands. User: contact us at bloomingpetals@gmail.com or 9123456701.",
+    "ground_truth": {
+      "business_name": "Blooming Petals",
+      "business_type": "Flower Shop",
+      "services": [
+        "Fresh flowers",
+        "Bouquets",
+        "Garlands"
+      ],
+      "city": "Tirupati",
+      "email": "bloomingpetals@gmail.com",
+      "phone": "9123456701"
+    },
+    "prediction": {
+      "business_name": "Blooming Petals",
+      "business_type": "",
+      "services": [],
+      "city": "Tirupati",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a fruit shop called Natures Basket in Nagapattinam. User: We sell fresh fruits, exotic fruits, and fruit baskets. User: contact us at naturesbasket@gmail.com or 9345612780.",
+    "ground_truth": {
+      "business_name": "Natures Basket",
+      "business_type": "Fruit Shop",
+      "services": [
+        "Fresh fruits",
+        "Exotic fruits",
+        "Fruit baskets"
+      ],
+      "city": "Nagapattinam",
+      "email": "naturesbasket@gmail.com",
+      "phone": "9345612780"
+    },
+    "prediction": {
+      "business_name": "Natures Basket",
+      "business_type": "",
+      "services": [],
+      "city": "Nagapattinam",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a grocery store called Fresh Mart in Ramanathapuram. User: We sell stationeries, dairy products, and daily essentials. User: contact us at freshmart@gmail.com or 9876501234.",
+    "ground_truth": {
+      "business_name": "Fresh Mart",
+      "business_type": "Grocery Shop",
+      "services": [
+        "Stationery",
+        "Dairy products",
+        "Daily essentials"
+      ],
+      "city": "Ramanathapuram",
+      "email": "freshmart@gmail.com",
+      "phone": "9876501234"
+    },
+    "prediction": {
+      "business_name": "Fresh Mart",
+      "business_type": "",
+      "services": [],
+      "city": "Ramanathapuram",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a juice shop called Fresh Sip in Thanjavur. User: We offer fresh juices, smoothies, and milkshakes. User: contact us at freshsip@gmail.com or 9988123456.",
+    "ground_truth": {
+      "business_name": "Fresh Sip",
+      "business_type": "Juice Shop",
+      "services": [
+        "Fresh juices",
+        "Smoothies",
+        "Milkshakes"
+      ],
+      "city": "Thanjavur",
+      "email": "freshsip@gmail.com",
+      "phone": "9988123456"
+    },
+    "prediction": {
+      "business_name": "Fresh Sip",
+      "business_type": "",
+      "services": [
+        "fresh juices",
+        "smoothies",
+        "milkshakes"
+      ],
+      "city": "Thanjavur",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a hotel called Comfort Stay in Hosur. User: We provide rooms, dining services, and event halls. User: contact us at comfortstay@gmail.com or 9098765432.",
+    "ground_truth": {
+      "business_name": "Comfort Stay",
+      "business_type": "Hotel",
+      "services": [
+        "Rooms",
+        "Dining services",
+        "Event halls"
+      ],
+      "city": "Hosur",
+      "email": "comfortstay@gmail.com",
+      "phone": "9098765432"
+    },
+    "prediction": {
+      "business_name": "Comfort Stay",
+      "business_type": "",
+      "services": [
+        "Rooms",
+        "Dining services",
+        "Event halls"
+      ],
+      "city": "Hosur",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a medical shop called Health Care Pharmacy in Chennai. User: We sell medicines, health products, and first aid supplies. User: contact: healthcare@gmail.com or phone: 9876543210.",
+    "ground_truth": {
+      "business_name": "Health Care Pharmacy",
+      "business_type": "Medical Shop",
+      "services": [
+        "Medicines",
+        "Health products",
+        "First aid supplies"
+      ],
+      "city": "Chennai",
+      "email": "healthcare@gmail.com",
+      "phone": "9876543210"
+    },
+    "prediction": {
+      "business_name": "Health Care Pharmacy",
+      "business_type": "",
+      "services": [],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a bakery called Sweet Oven in Coimbatore. User: We offer cakes, pastries, and baked snacks. User: contact: sweetoven@gmail.com or phone: 9123456780.",
+    "ground_truth": {
+      "business_name": "Sweet Oven",
+      "business_type": "Bakery",
+      "services": [
+        "Cakes",
+        "Pastries",
+        "Baked snacks"
+      ],
+      "city": "Coimbatore",
+      "email": "sweetoven@gmail.com",
+      "phone": "9123456780"
+    },
+    "prediction": {
+      "business_name": "Sweet Oven",
+      "business_type": "",
+      "services": [
+        "cakes",
+        "pastries",
+        "baked snacks"
+      ],
+      "city": "Coimbatore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a sweet shop called Sugar Delight in Madurai. User: We sell traditional sweets, chocolates, and desserts. User: contact: sugardelight@gmail.com or phone: 9345671234.",
+    "ground_truth": {
+      "business_name": "Sugar Delight",
+      "business_type": "Sweet Shop",
+      "services": [
+        "Traditional sweets",
+        "Chocolates",
+        "Desserts"
+      ],
+      "city": "Madurai",
+      "email": "sugardelight@gmail.com",
+      "phone": "9345671234"
+    },
+    "prediction": {
+      "business_name": "Sugar Delight",
+      "business_type": "",
+      "services": [],
+      "city": "Madurai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a tea stall called Chai Corner in Trichy. User: We offer tea, coffee, and snacks. User: contact: chaicorner@gmail.com or phone: 9988776655.",
+    "ground_truth": {
+      "business_name": "Chai Corner",
+      "business_type": "Cafe",
+      "services": [
+        "Tea",
+        "Coffee",
+        "Snacks"
+      ],
+      "city": "Trichy",
+      "email": "chaicorner@gmail.com",
+      "phone": "9988776655"
+    },
+    "prediction": {
+      "business_name": "Chai Corner",
+      "business_type": "",
+      "services": [
+        "tea",
+        "coffee",
+        "snacks"
+      ],
+      "city": "Trichy",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a restaurant called Food Fiesta in Salem. User: We serve veg and non-veg dishes. User: contact: foodfiesta@gmail.com or phone: 9011223344.",
+    "ground_truth": {
+      "business_name": "Food Fiesta",
+      "business_type": "Restaurant",
+      "services": [
+        "Veg dishes",
+        "Non-veg dishes"
+      ],
+      "city": "Salem",
+      "email": "foodfiesta@gmail.com",
+      "phone": "9011223344"
+    },
+    "prediction": {
+      "business_name": "Food Fiesta",
+      "business_type": "restaurant",
+      "services": [],
+      "city": "Salem",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run an ice cream shop called Cool Scoops in Tirunelveli. User: We offer ice creams, sundaes, and shakes. User: contact: coolscoops@gmail.com or phone: 9090909090.",
+    "ground_truth": {
+      "business_name": "Cool Scoops",
+      "business_type": "Ice Cream Shop",
+      "services": [
+        "Ice creams",
+        "Sundaes",
+        "Shakes"
+      ],
+      "city": "Tirunelveli",
+      "email": "coolscoops@gmail.com",
+      "phone": "9090909090"
+    },
+    "prediction": {
+      "business_name": "Cool Scoops",
+      "business_type": "Ice Cream Shop",
+      "services": [
+        "ice creams",
+        "sundaes",
+        "shakes"
+      ],
+      "city": "Tirunelveli",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a mobile repair shop called Mobile Fix in Chennai. User: We provide mobile repair, screen replacement, and accessories. User: contact: mobilefix@gmail.com or phone: 9009988776.",
+    "ground_truth": {
+      "business_name": "Mobile Fix",
+      "business_type": "Mobile Repair Shop",
+      "services": [
+        "Mobile repair",
+        "Screen replacement",
+        "Accessories"
+      ],
+      "city": "Chennai",
+      "email": "mobilefix@gmail.com",
+      "phone": "9009988776"
+    },
+    "prediction": {
+      "business_name": "Mobile Fix",
+      "business_type": "",
+      "services": [
+        "mobile repair",
+        "screen replacement",
+        "accessories"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a furniture shop called Comfort Furniture in Erode. User: We sell sofas, beds, tables, and home furniture. User: contact: comfortfurniture@gmail.com or phone: 9445566778.",
+    "ground_truth": {
+      "business_name": "Comfort Furniture",
+      "business_type": "Furniture Shop",
+      "services": [
+        "Sofas",
+        "Beds",
+        "Tables",
+        "Home furniture"
+      ],
+      "city": "Erode",
+      "email": "comfortfurniture@gmail.com",
+      "phone": "9445566778"
+    },
+    "prediction": {
+      "business_name": "Comfort Furniture",
+      "business_type": "",
+      "services": [],
+      "city": "Erode",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a jewellery shop called Gold Shine in Tirupati. User: We sell gold, silver, and diamond jewellery. User: contact: goldshine@gmail.com or phone: 9887766554.",
+    "ground_truth": {
+      "business_name": "Gold Shine",
+      "business_type": "Jewellery Shop",
+      "services": [
+        "Gold",
+        "Silver",
+        "Diamond jewellery"
+      ],
+      "city": "Tirupati",
+      "email": "goldshine@gmail.com",
+      "phone": "9887766554"
+    },
+    "prediction": {
+      "business_name": "Gold Shine",
+      "business_type": "",
+      "services": [],
+      "city": "Tirupati",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a salon called Style Studio in Chennai. User: We offer haircuts, beauty services, and grooming. User: contact: stylestudio@gmail.com or phone: 9776655443.",
+    "ground_truth": {
+      "business_name": "Style Studio",
+      "business_type": "Salon",
+      "services": [
+        "Haircuts",
+        "Beauty services",
+        "Grooming"
+      ],
+      "city": "Chennai",
+      "email": "stylestudio@gmail.com",
+      "phone": "9776655443"
+    },
+    "prediction": {
+      "business_name": "Style Studio",
+      "business_type": "",
+      "services": [
+        "haircuts",
+        "beauty services",
+        "grooming"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a gym called Fit Zone in Coimbatore. User: We provide fitness training and personal coaching. User: contact: fitzone@gmail.com or phone: 9665544332.",
+    "ground_truth": {
+      "business_name": "Fit Zone",
+      "business_type": "Gym",
+      "services": [
+        "Fitness training",
+        "Personal coaching"
+      ],
+      "city": "Coimbatore",
+      "email": "fitzone@gmail.com",
+      "phone": "9665544332"
+    },
+    "prediction": {
+      "business_name": "Fit Zone",
+      "business_type": "Gym",
+      "services": [
+        "fitness training",
+        "personal coaching"
+      ],
+      "city": "Coimbatore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a printing shop called Print Hub in Vellore. User: We offer printing, photocopy, and binding services. User: contact: printhub@gmail.com or phone: 9554433221.",
+    "ground_truth": {
+      "business_name": "Print Hub",
+      "business_type": "Printing Shop",
+      "services": [
+        "Printing",
+        "Photocopy",
+        "Binding"
+      ],
+      "city": "Vellore",
+      "email": "printhub@gmail.com",
+      "phone": "9554433221"
+    },
+    "prediction": {
+      "business_name": "Print Hub",
+      "business_type": "",
+      "services": [
+        "printing",
+        "photocopy",
+        "binding"
+      ],
+      "city": "Vellore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a gift shop called Surprise Gifts in Pondicherry. User: We sell gifts, toys, and decorative items. User: contact: surprisegifts@gmail.com or phone: 9443322110.",
+    "ground_truth": {
+      "business_name": "Surprise Gifts",
+      "business_type": "Gift Shop",
+      "services": [
+        "Gifts",
+        "Toys",
+        "Decorative items"
+      ],
+      "city": "Pondicherry",
+      "email": "surprisegifts@gmail.com",
+      "phone": "9443322110"
+    },
+    "prediction": {
+      "business_name": "Surprise Gifts",
+      "business_type": "gift shop",
+      "services": [],
+      "city": "Pondicherry",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a mobile repairing shop in Urapakkam named mobilo. User: I repair smartphones and have collection of spare parts. User: mail: mobil@gmail.com or phone: 9807865789.",
+    "ground_truth": {
+      "business_name": "mobilo",
+      "business_type": "Mobile Repair Shop",
+      "services": [
+        "Smartphone repair",
+        "Spare parts"
+      ],
+      "city": "Urapakkam",
+      "email": "mobil@gmail.com",
+      "phone": "9807865789"
+    },
+    "prediction": {
+      "business_name": "mobilo",
+      "business_type": "mobile repairing shop",
+      "services": [
+        "smartphone repair",
+        "spare parts collection"
+      ],
+      "city": "Urapakkam",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I have a cake shop in Perumalur, GST road called cakey cakes. User: We sell all flavours of cakes and ice cream cakes. User: to order mail: cakey@gmail.com or phone: 9008900909.",
+    "ground_truth": {
+      "business_name": "cakey cakes",
+      "business_type": "Bakery",
+      "services": [
+        "Cakes",
+        "Ice cream cakes"
+      ],
+      "city": "Perumalur",
+      "email": "cakey@gmail.com",
+      "phone": "9008900909"
+    },
+    "prediction": {
+      "business_name": "Cakey Cakes",
+      "business_type": "Cake shop",
+      "services": [
+        "All flavours of cakes",
+        "Ice cream cakes"
+      ],
+      "city": "",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: We own a car wash company in Chennai known BBohm. User: We offer car cleaning services and apparels and air supply for tire. User: Contact: BBohm@gmail.com 7894389009.",
+    "ground_truth": {
+      "business_name": "BBohm",
+      "business_type": "Car Wash",
+      "services": [
+        "Car cleaning",
+        "Apparels",
+        "Air supply"
+      ],
+      "city": "Chennai",
+      "email": "BBohm@gmail.com",
+      "phone": "7894389009"
+    },
+    "prediction": {
+      "business_name": "BBohm",
+      "business_type": "",
+      "services": [
+        "car cleaning",
+        "apparels",
+        "air supply for tire"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I have a PC repair shop in West Tambaram with name SALEM tech. User: I repair PCs, laptops and related products. User: contact mail: salemtech@gmail.com or phone: 9000877673.",
+    "ground_truth": {
+      "business_name": "SALEM tech",
+      "business_type": "PC Repair Shop",
+      "services": [
+        "PC repair",
+        "Laptop repair",
+        "Tech products"
+      ],
+      "city": "West Tambaram",
+      "email": "salemtech@gmail.com",
+      "phone": "9000877673"
+    },
+    "prediction": {
+      "business_name": "SALEM tech",
+      "business_type": "",
+      "services": [
+        "PC repair",
+        "Laptop repair",
+        "Related product repair"
+      ],
+      "city": "West Tambaram",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I have a PC repair shop in West Tambaram with name SALEM tech. User: I repair PCs, laptops and related products. User: contact mail: salemtech@gmail.com or phone: 9000877673.",
+    "ground_truth": {
+      "business_name": "SALEM tech",
+      "business_type": "PC Repair Shop",
+      "services": [
+        "PC repair",
+        "Laptop repair",
+        "Tech products"
+      ],
+      "city": "West Tambaram",
+      "email": "salemtech@gmail.com",
+      "phone": "9000877673"
+    },
+    "prediction": {
+      "business_name": "SALEM tech",
+      "business_type": "",
+      "services": [
+        "PC repair",
+        "Laptop repair",
+        "Related product repair"
+      ],
+      "city": "West Tambaram",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: Me and my friend started a music class in Vellore called MyuMyusic. User: We teach classical and western music. User: contact: myu@gmail.com or phone: 9878878354.",
+    "ground_truth": {
+      "business_name": "MyuMyusic",
+      "business_type": "Music Class",
+      "services": [
+        "Classical music",
+        "Western music"
+      ],
+      "city": "Vellore",
+      "email": "myu@gmail.com",
+      "phone": "9878878354"
+    },
+    "prediction": {
+      "business_name": "MyuMyusic",
+      "business_type": "",
+      "services": [
+        "classical music",
+        "western music"
+      ],
+      "city": "Vellore",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a gym called Gokufit in Nandhapakkam. User: We have training equipment and personal trainers. User: to book call: 7879065678.",
+    "ground_truth": {
+      "business_name": "Gokufit",
+      "business_type": "Gym",
+      "services": [
+        "Fitness training",
+        "Personal trainers",
+        "Gym equipment"
+      ],
+      "city": "Nandhapakkam",
+      "email": "",
+      "phone": "7879065678"
+    },
+    "prediction": {
+      "business_name": "Gokufit",
+      "business_type": "Gym",
+      "services": [
+        "Training equipment",
+        "Personal trainers"
+      ],
+      "city": "Nandhapakkam",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: We have a photography studio Ghibli photos at T Nagar. User: We offer passport photos, large prints, mugs and posters. User: contact mail: ghibli@gmail.com or phone: 6789708978.",
+    "ground_truth": {
+      "business_name": "Ghibli photos",
+      "business_type": "Photography Studio",
+      "services": [
+        "Passport photos",
+        "Large prints",
+        "Mug printing",
+        "Poster printing"
+      ],
+      "city": "T Nagar",
+      "email": "ghibli@gmail.com",
+      "phone": "6789708978"
+    },
+    "prediction": {
+      "business_name": "Ghibli Photos",
+      "business_type": "",
+      "services": [
+        "passport photos",
+        "large prints",
+        "mugs",
+        "posters"
+      ],
+      "city": "T Nagar",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a dance class named kelvin dance crew in Madambakkam. User: I teach hiphop, locking, crump and freestyle. User: contact: 9870999809 or 7890098789 mail: kdc@gmail.com.",
+    "ground_truth": {
+      "business_name": "kelvin dance crew",
+      "business_type": "Dance Class",
+      "services": [
+        "Hiphop",
+        "Locking",
+        "Crump",
+        "Freestyle"
+      ],
+      "city": "Madambakkam",
+      "email": "kdc@gmail.com",
+      "phone": "9870999809"
+    },
+    "prediction": {
+      "business_name": "Kelvin Dance Crew",
+      "business_type": "",
+      "services": [
+        "hiphop",
+        "locking",
+        "crump",
+        "freestyle"
+      ],
+      "city": "Madambakkam",
+      "email": "kdc@gmail.com",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I am a freelance editor in Chennai. User: I edit long videos and YouTube shorts. User: contact mail: henryedits@gmail.com or phone: 8890987890.",
+    "ground_truth": {
+      "business_name": "Henryedits",
+      "business_type": "Freelance Video Editor",
+      "services": [
+        "Long video editing",
+        "Short video editing"
+      ],
+      "city": "Chennai",
+      "email": "henryedits@gmail.com",
+      "phone": "8890987890"
+    },
+    "prediction": {
+      "business_name": "Freelance Video Editor",
+      "business_type": "",
+      "services": [
+        "Long video editing",
+        "YouTube Shorts editing"
+      ],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I am a YouTuber in Chennai with channel name Kvlogs. User: I do vlogs covering theatres in Chennai. User: contact: kvlogs002@gmail.com or phone: 7789909983.",
+    "ground_truth": {
+      "business_name": "Kvlogs",
+      "business_type": "Content Creator",
+      "services": [
+        "Vlogging",
+        "Theatre reviews",
+        "Promotions"
+      ],
+      "city": "Chennai",
+      "email": "kvlogs002@gmail.com",
+      "phone": "7789909983"
+    },
+    "prediction": {
+      "business_name": "Kvlogs",
+      "business_type": "YouTube Channel",
+      "services": [],
+      "city": "Chennai",
+      "email": "",
+      "phone": ""
+    }
+  }
+]

@@ -1,0 +1,1205 @@
+[
+  {
+    "conversation": "User: I own a bakery called Sweet Crumbs in Chennai. User: We make cakes, cupcakes, and wedding cakes. User: Contact us at sweetcrumbs@gmail.com or 9876543210.",
+    "ground_truth": {
+      "business_name": "Sweet Crumbs",
+      "business_type": "Bakery",
+      "services": ["Cakes", "Cupcakes", "Wedding cakes"],
+      "city": "Chennai",
+      "email": "sweetcrumbs@gmail.com",
+      "phone": "9876543210"
+    }
+  },
+  {
+    "conversation": "User: I run a beauty salon named Glow Studio in Bangalore. User: We offer haircuts, facials, and bridal makeup. User: Reach us at glowstudio@gmail.com. User: Phone is 9123456780.",
+    "ground_truth": {
+      "business_name": "Glow Studio",
+      "business_type": "Salon",
+      "services": ["Haircuts", "Facials", "Bridal makeup"],
+      "city": "Bangalore",
+      "email": "glowstudio@gmail.com",
+      "phone": "9123456780"
+    }
+  },
+  {
+    "conversation": "User: My gym is called Iron Core Fitness in Hyderabad. User: We provide weight training, personal coaching, and cardio programs. User: Email ironcore@gmail.com and call 9988776655.",
+    "ground_truth": {
+      "business_name": "Iron Core Fitness",
+      "business_type": "Gym",
+      "services": ["Weight training", "Personal coaching", "Cardio programs"],
+      "city": "Hyderabad",
+      "email": "ironcore@gmail.com",
+      "phone": "9988776655"
+    }
+  },
+  {
+    "conversation": "User: I am a freelance web developer named Rahul based in Mumbai. User: I build websites, landing pages, and e-commerce stores. User: Contact me at rahul.dev@gmail.com.",
+    "ground_truth": {
+      "business_name": "Rahul",
+      "business_type": "Freelance Web Developer",
+      "services": ["Websites", "Landing pages", "E-commerce stores"],
+      "city": "Mumbai",
+      "email": "rahul.dev@gmail.com",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a dental clinic called SmileCare in Delhi. User: We offer cleaning, braces, and root canal treatments. User: Call 9012345678 or email smilecare@gmail.com.",
+    "ground_truth": {
+      "business_name": "SmileCare",
+      "business_type": "Dental Clinic",
+      "services": ["Cleaning", "Braces", "Root canal treatments"],
+      "city": "Delhi",
+      "email": "smilecare@gmail.com",
+      "phone": "9012345678"
+    }
+  },
+  {
+    "conversation": "User: I own a restaurant called Spice Route in Chennai. User: We serve South Indian and North Indian dishes. User: Contact spice@gmail.com or 9871234560.",
+    "ground_truth": {
+      "business_name": "Spice Route",
+      "business_type": "Restaurant",
+      "services": ["South Indian dishes", "North Indian dishes"],
+      "city": "Chennai",
+      "email": "spice@gmail.com",
+      "phone": "9871234560"
+    }
+  },
+  {
+    "conversation": "User: I am a photographer named LensCraft based in Pune. User: I do wedding shoots, portraits, and events. User: Email lenscraft@gmail.com.",
+    "ground_truth": {
+      "business_name": "LensCraft",
+      "business_type": "Photography",
+      "services": ["Wedding shoots", "Portraits", "Events"],
+      "city": "Pune",
+      "email": "lenscraft@gmail.com",
+      "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a coaching center called Bright Minds in Chennai. User: We teach math, physics, and chemistry. User: Call us at 9001122334.",
+    "ground_truth": {
+      "business_name": "Bright Minds",
+      "business_type": "Coaching Center",
+      "services": ["Math", "Physics", "Chemistry"],
+      "city": "Chennai",
+      "email": "",
+      "phone": "9001122334"
+    }
+  },
+  {
+    "conversation": "User: I own a boutique called Style Hub in Bangalore. User: We sell dresses, ethnic wear, and accessories. User: Email stylehub@gmail.com and phone 9876501234.",
+    "ground_truth": {
+      "business_name": "Style Hub",
+      "business_type": "Boutique",
+      "services": ["Dresses", "Ethnic wear", "Accessories"],
+      "city": "Bangalore",
+      "email": "stylehub@gmail.com",
+      "phone": "9876501234"
+    }
+  },
+  {
+    "conversation": "User: Our startup is called DataNest based in Hyderabad. User: We provide AI solutions, data analytics, and automation. User: Contact datanest@gmail.com.",
+    "ground_truth": {
+      "business_name": "DataNest",
+      "business_type": "Tech Startup",
+      "services": ["AI solutions", "Data analytics", "Automation"],
+      "city": "Hyderabad",
+      "email": "datanest@gmail.com",
+      "phone": ""
+    }
+  },
+
+
+  {
+    "conversation": "User: I own a clothing store called Trendy Threads in Trichy. User: We sell casual wear, formal wear, and accessories. User: contact us at trendythreads@gmail.com or 9050999097.",
+    "ground_truth": {
+      "business_name": "Trendy Threads",
+      "business_type": "Clothing Store",
+      "services": ["Casual wear", "Formal wear", "Accessories"],
+      "city": "Trichy",
+      "email": "trendythreads@gmail.com",
+      "phone": "9050999097"
+    }
+  },
+  {
+    "conversation": "User: I run a photography business called Capture Moments in Salem. User: We do wedding shoots, portraits, and event photography. User: contact us at capturemoments@gmail.com or 9345678901.",
+    "ground_truth": {
+      "business_name": "Capture Moments",
+      "business_type": "Photography",
+      "services": ["Wedding shoots", "Portraits", "Event photography"],
+      "city": "Salem",
+      "email": "capturemoments@gmail.com",
+      "phone": "9345678901"
+    }
+  },
+  {
+    "conversation": "User: I run a tuition center called Bright Minds Academy in Chennai. User: We teach Maths, Science, and English for school students. User: contact us at brightminds@gmail.com or 9012345678.",
+    "ground_truth": {
+      "business_name": "Bright Minds Academy",
+      "business_type": "Tuition Center",
+      "services": ["Maths", "Science", "English"],
+      "city": "Chennai",
+      "email": "brightminds@gmail.com",
+      "phone": "9012345678"
+    }
+  },
+  {
+    "conversation": "User: I own an electronics store called Tech World in Tirunelveli. User: We sell mobiles, laptops, and accessories. User: contact us at techworld@gmail.com or 8899001122.",
+    "ground_truth": {
+      "business_name": "Tech World",
+      "business_type": "Electronics Shop",
+      "services": ["Mobiles", "Laptops", "Accessories"],
+      "city": "Tirunelveli",
+      "email": "techworld@gmail.com",
+      "phone": "8899001122"
+    }
+  },
+  {
+    "conversation": "User: I run a travel agency called Happy Trails in Pondicherry. User: We offer tour packages, flight booking, and hotel reservations. User: contact us at happytrails@gmail.com or 9786543210.",
+    "ground_truth": {
+      "business_name": "Happy Trails",
+      "business_type": "Travel Agency",
+      "services": ["Tour packages", "Flight booking", "Hotel reservations"],
+      "city": "Pondicherry",
+      "email": "happytrails@gmail.com",
+      "phone": "9786543210"
+    }
+  },
+  {
+    "conversation": "User: I own a pet shop called Pet Paradise in Madurai. User: We sell pet food, accessories, and grooming products. User: contact us at petparadise@gmail.com or 9654321870.",
+    "ground_truth": {
+      "business_name": "Pet Paradise",
+      "business_type": "Pet Shop",
+      "services": ["Pet food", "Accessories", "Grooming products"],
+      "city": "Madurai",
+      "email": "petparadise@gmail.com",
+      "phone": "9654321870"
+    }
+  },
+  {
+    "conversation": "User: I run an interior design business called Dream Spaces in Coimbatore. User: We design homes, offices, and modular kitchens. User: contact us at dreamspaces@gmail.com or 9123987654.",
+    "ground_truth": {
+      "business_name": "Dream Spaces",
+      "business_type": "Interior Design",
+      "services": ["Home design", "Office design", "Modular kitchens"],
+      "city": "Coimbatore",
+      "email": "dreamspaces@gmail.com",
+      "phone": "9123987654"
+    }
+  },
+  {
+    "conversation": "User: I own a car service center called AutoCare Hub in Chennai. User: We provide car repair, servicing, and washing. User: contact us at autocarehub@gmail.com or 9001122334.",
+    "ground_truth": {
+      "business_name": "AutoCare Hub",
+      "business_type": "Car Service",
+      "services": ["Car repair", "Servicing", "Washing"],
+      "city": "Chennai",
+      "email": "autocarehub@gmail.com",
+      "phone": "9001122334"
+    }
+  },
+  {
+    "conversation": "User: I own a bookstore called Book Haven in Tirupathur. User: We sell novels, academic books, and stationery. User: contact us at bookhaven@gmail.com or 9811223344.",
+    "ground_truth": {
+      "business_name": "Book Haven",
+      "business_type": "Bookstore",
+      "services": ["Novels", "Academic books", "Stationery"],
+      "city": "Tirupathur",
+      "email": "bookhaven@gmail.com",
+      "phone": "9811223344"
+    }
+  },
+  {
+    "conversation": "User: I run a digital marketing agency called Growth Hackers in Chithambaram. User: We offer SEO, social media marketing, and ads management. User: contact us at growthhackers@gmail.com or 9332211445.",
+    "ground_truth": {
+      "business_name": "Growth Hackers",
+      "business_type": "Digital Marketing",
+      "services": ["SEO", "Social media marketing", "Ads management"],
+      "city": "Chithambaram",
+      "email": "growthhackers@gmail.com",
+      "phone": "9332211445"
+    }
+  },
+  {
+    "conversation": "User: I own a flower shop called Blooming Petals in Tirupati. User: We sell fresh flowers, bouquets, and garlands. User: contact us at bloomingpetals@gmail.com or 9123456701.",
+    "ground_truth": {
+      "business_name": "Blooming Petals",
+      "business_type": "Flower Shop",
+      "services": ["Fresh flowers", "Bouquets", "Garlands"],
+      "city": "Tirupati",
+      "email": "bloomingpetals@gmail.com",
+      "phone": "9123456701"
+    }
+  },
+  {
+    "conversation": "User: I own a fruit shop called Nature’s Basket in Nagapattinam. User: We sell fresh fruits, exotic fruits, and fruit baskets. User: contact us at naturesbasket@gmail.com or 9345612780.",
+    "ground_truth": {
+      "business_name": "Nature’s Basket",
+      "business_type": "Fruit Shop",
+      "services": ["Fresh fruits", "Exotic fruits", "Fruit baskets"],
+      "city": "Nagapattinam",
+      "email": "naturesbasket@gmail.com",
+      "phone": "9345612780"
+    }
+  },
+  {
+    "conversation": "User: I own a grocery store called Fresh Mart in Ramanathapuram. User: We sell stationeries, dairy products, and daily essentials. User: contact us at freshmart@gmail.com or 9876501234.",
+    "ground_truth": {
+      "business_name": "Fresh Mart",
+      "business_type": "Grocery Shop",
+      "services": ["Stationery", "Dairy products", "Daily essentials"],
+      "city": "Ramanathapuram",
+      "email": "freshmart@gmail.com",
+      "phone": "9876501234"
+    }
+  },
+  {
+    "conversation": "User: I run a juice shop called Fresh Sip in Thanjavur. User: We offer fresh juices, smoothies, and milkshakes. User: contact us at freshsip@gmail.com or 9988123456.",
+    "ground_truth": {
+      "business_name": "Fresh Sip",
+      "business_type": "Juice Shop",
+      "services": ["Fresh juices", "Smoothies", "Milkshakes"],
+      "city": "Thanjavur",
+      "email": "freshsip@gmail.com",
+      "phone": "9988123456"
+    }
+  },
+  {
+    "conversation": "User: I own a hotel called Comfort Stay in Hosur. User: We provide rooms, dining services, and event halls. User: contact us at comfortstay@gmail.com or 9098765432.",
+    "ground_truth": {
+      "business_name": "Comfort Stay",
+      "business_type": "Hotel",
+      "services": ["Rooms", "Dining services", "Event halls"],
+      "city": "Hosur",
+      "email": "comfortstay@gmail.com",
+      "phone": "9098765432"
+    }
+  },
+
+  {
+    "conversation": "User: I own a medical shop called Health Care Pharmacy in Chennai. User: We sell medicines, health products, and first aid supplies. User: contact: healthcare@gmail.com or phone: 9876543210.",
+    "ground_truth": {
+      "business_name": "Health Care Pharmacy",
+      "business_type": "Medical Shop",
+      "services": ["Medicines", "Health products", "First aid supplies"],
+      "city": "Chennai",
+      "email": "healthcare@gmail.com",
+      "phone": "9876543210"
+    }
+  },
+  {
+    "conversation": "User: I run a bakery called Sweet Oven in Coimbatore. User: We offer cakes, pastries, and baked snacks. User: contact: sweetoven@gmail.com or phone: 9123456780.",
+    "ground_truth": {
+      "business_name": "Sweet Oven",
+      "business_type": "Bakery",
+      "services": ["Cakes", "Pastries", "Baked snacks"],
+      "city": "Coimbatore",
+      "email": "sweetoven@gmail.com",
+      "phone": "9123456780"
+    }
+  },
+  {
+    "conversation": "User: I own a sweet shop called Sugar Delight in Madurai. User: We sell traditional sweets, chocolates, and desserts. User: contact: sugardelight@gmail.com or phone: 9345671234.",
+    "ground_truth": {
+      "business_name": "Sugar Delight",
+      "business_type": "Sweet Shop",
+      "services": ["Traditional sweets", "Chocolates", "Desserts"],
+      "city": "Madurai",
+      "email": "sugardelight@gmail.com",
+      "phone": "9345671234"
+    }
+  },
+  {
+    "conversation": "User: I run a tea stall called Chai Corner in Trichy. User: We offer tea, coffee, and snacks. User: contact: chaicorner@gmail.com or phone: 9988776655.",
+    "ground_truth": {
+      "business_name": "Chai Corner",
+      "business_type": "Cafe",
+      "services": ["Tea", "Coffee", "Snacks"],
+      "city": "Trichy",
+      "email": "chaicorner@gmail.com",
+      "phone": "9988776655"
+    }
+  },
+  {
+    "conversation": "User: I own a restaurant called Food Fiesta in Salem. User: We serve veg and non-veg dishes. User: contact: foodfiesta@gmail.com or phone: 9011223344.",
+    "ground_truth": {
+      "business_name": "Food Fiesta",
+      "business_type": "Restaurant",
+      "services": ["Veg dishes", "Non-veg dishes"],
+      "city": "Salem",
+      "email": "foodfiesta@gmail.com",
+      "phone": "9011223344"
+    }
+  },
+  {
+    "conversation": "User: I run an ice cream shop called Cool Scoops in Tirunelveli. User: We offer ice creams, sundaes, and shakes. User: contact: coolscoops@gmail.com or phone: 9090909090.",
+    "ground_truth": {
+      "business_name": "Cool Scoops",
+      "business_type": "Ice Cream Shop",
+      "services": ["Ice creams", "Sundaes", "Shakes"],
+      "city": "Tirunelveli",
+      "email": "coolscoops@gmail.com",
+      "phone": "9090909090"
+    }
+  },
+  {
+    "conversation": "User: I own a mobile repair shop called Mobile Fix in Chennai. User: We provide mobile repair, screen replacement, and accessories. User: contact: mobilefix@gmail.com or phone: 9009988776.",
+    "ground_truth": {
+      "business_name": "Mobile Fix",
+      "business_type": "Mobile Repair Shop",
+      "services": ["Mobile repair", "Screen replacement", "Accessories"],
+      "city": "Chennai",
+      "email": "mobilefix@gmail.com",
+      "phone": "9009988776"
+    }
+  },
+  {
+    "conversation": "User: I run a furniture shop called Comfort Furniture in Erode. User: We sell sofas, beds, tables, and home furniture. User: contact: comfortfurniture@gmail.com or phone: 9445566778.",
+    "ground_truth": {
+      "business_name": "Comfort Furniture",
+      "business_type": "Furniture Shop",
+      "services": ["Sofas", "Beds", "Tables", "Home furniture"],
+      "city": "Erode",
+      "email": "comfortfurniture@gmail.com",
+      "phone": "9445566778"
+    }
+  },
+  {
+    "conversation": "User: I own a jewellery shop called Gold Shine in Tirupati. User: We sell gold, silver, and diamond jewellery. User: contact: goldshine@gmail.com or phone: 9887766554.",
+    "ground_truth": {
+      "business_name": "Gold Shine",
+      "business_type": "Jewellery Shop",
+      "services": ["Gold", "Silver", "Diamond jewellery"],
+      "city": "Tirupati",
+      "email": "goldshine@gmail.com",
+      "phone": "9887766554"
+    }
+  },
+  {
+    "conversation": "User: I run a salon called Style Studio in Chennai. User: We offer haircuts, beauty services, and grooming. User: contact: stylestudio@gmail.com or phone: 9776655443.",
+    "ground_truth": {
+      "business_name": "Style Studio",
+      "business_type": "Salon",
+      "services": ["Haircuts", "Beauty services", "Grooming"],
+      "city": "Chennai",
+      "email": "stylestudio@gmail.com",
+      "phone": "9776655443"
+    }
+  },
+  {
+    "conversation": "User: I own a gym called Fit Zone in Coimbatore. User: We provide fitness training and personal coaching. User: contact: fitzone@gmail.com or phone: 9665544332.",
+    "ground_truth": {
+      "business_name": "Fit Zone",
+      "business_type": "Gym",
+      "services": ["Fitness training", "Personal coaching"],
+      "city": "Coimbatore",
+      "email": "fitzone@gmail.com",
+      "phone": "9665544332"
+    }
+  },
+  {
+    "conversation": "User: I run a printing shop called Print Hub in Vellore. User: We offer printing, photocopy, and binding services. User: contact: printhub@gmail.com or phone: 9554433221.",
+    "ground_truth": {
+      "business_name": "Print Hub",
+      "business_type": "Printing Shop",
+      "services": ["Printing", "Photocopy", "Binding"],
+      "city": "Vellore",
+      "email": "printhub@gmail.com",
+      "phone": "9554433221"
+    }
+  },
+  {
+    "conversation": "User: I own a gift shop called Surprise Gifts in Pondicherry. User: We sell gifts, toys, and decorative items. User: contact: surprisegifts@gmail.com or phone: 9443322110.",
+    "ground_truth": {
+      "business_name": "Surprise Gifts",
+      "business_type": "Gift Shop",
+      "services": ["Gifts", "Toys", "Decorative items"],
+      "city": "Pondicherry",
+      "email": "surprisegifts@gmail.com",
+      "phone": "9443322110"
+    }
+  },
+
+{
+  "conversation": "User: I run a mobile repairing shop in Urapakkam named mobilo. User: I repair smartphones and have collection of spare parts. User: mail: mobil@gmail.com or phone: 9807865789.",
+  "ground_truth": {
+    "business_name": "mobilo",
+    "business_type": "Mobile Repair Shop",
+    "services": ["Smartphone repair", "Spare parts"],
+    "city": "Urapakkam",
+    "email": "mobil@gmail.com",
+    "phone": "9807865789"
+  }
+},
+{
+  "conversation": "User: I have a cake shop in Perumalur, GST road called cakey cakes. User: We sell all flavours of cakes and ice cream cakes. User: to order mail: cakey@gmail.com or phone: 9008900909.",
+  "ground_truth": {
+    "business_name": "cakey cakes",
+    "business_type": "Bakery",
+    "services": ["Cakes", "Ice cream cakes"],
+    "city": "Perumalur",
+    "email": "cakey@gmail.com",
+    "phone": "9008900909"
+  }
+},
+{
+  "conversation": "User: We own a car wash company in Chennai known BBohm. User: We offer car cleaning services and apparels and air supply for tire. User: Contact: BBohm@gmail.com 7894389009.",
+  "ground_truth": {
+    "business_name": "BBohm",
+    "business_type": "Car Wash",
+    "services": ["Car cleaning", "Apparels", "Air supply"],
+    "city": "Chennai",
+    "email": "BBohm@gmail.com",
+    "phone": "7894389009"
+  }
+},
+{
+  "conversation": "User: I have a PC repair shop in West Tambaram with name SALEM tech. User: I repair PCs, laptops and related products. User: contact mail: salemtech@gmail.com or phone: 9000877673.",
+  "ground_truth": {
+    "business_name": "SALEM tech",
+    "business_type": "PC Repair Shop",
+    "services": ["PC repair", "Laptop repair", "Tech products"],
+    "city": "West Tambaram",
+    "email": "salemtech@gmail.com",
+    "phone": "9000877673"
+  }
+},
+{
+  "conversation": "User: I have a PC repair shop in West Tambaram with name SALEM tech. User: I repair PCs, laptops and related products. User: contact mail: salemtech@gmail.com or phone: 9000877673.",
+  "ground_truth": {
+    "business_name": "SALEM tech",
+    "business_type": "PC Repair Shop",
+    "services": ["PC repair", "Laptop repair", "Tech products"],
+    "city": "West Tambaram",
+    "email": "salemtech@gmail.com",
+    "phone": "9000877673"
+  }
+},
+{
+  "conversation": "User: Me and my friend started a music class in Vellore called MyuMyusic. User: We teach classical and western music. User: contact: myu@gmail.com or phone: 9878878354.",
+  "ground_truth": {
+    "business_name": "MyuMyusic",
+    "business_type": "Music Class",
+    "services": ["Classical music", "Western music"],
+    "city": "Vellore",
+    "email": "myu@gmail.com",
+    "phone": "9878878354"
+  }
+},
+{
+  "conversation": "User: I own a gym called Gokufit in Nandhapakkam. User: We have training equipment and personal trainers. User: to book call: 7879065678.",
+  "ground_truth": {
+    "business_name": "Gokufit",
+    "business_type": "Gym",
+    "services": ["Fitness training", "Personal trainers", "Gym equipment"],
+    "city": "Nandhapakkam",
+    "email": "",
+    "phone": "7879065678"
+  }
+},
+{
+  "conversation": "User: We have a photography studio Ghibli photos at T Nagar. User: We offer passport photos, large prints, mugs and posters. User: contact mail: ghibli@gmail.com or phone: 6789708978.",
+  "ground_truth": {
+    "business_name": "Ghibli photos",
+    "business_type": "Photography Studio",
+    "services": ["Passport photos", "Large prints", "Mug printing", "Poster printing"],
+    "city": "T Nagar",
+    "email": "ghibli@gmail.com",
+    "phone": "6789708978"
+  }
+},
+{
+  "conversation": "User: I own a dance class named kelvin dance crew in Madambakkam. User: I teach hiphop, locking, crump and freestyle. User: contact: 9870999809 or 7890098789 mail: kdc@gmail.com.",
+  "ground_truth": {
+    "business_name": "kelvin dance crew",
+    "business_type": "Dance Class",
+    "services": ["Hiphop", "Locking", "Crump", "Freestyle"],
+    "city": "Madambakkam",
+    "email": "kdc@gmail.com",
+    "phone": "9870999809"
+  }
+},
+{
+  "conversation": "User: I am a freelance editor in Chennai. User: I edit long videos and YouTube shorts. User: contact mail: henryedits@gmail.com or phone: 8890987890.",
+  "ground_truth": {
+    "business_name": "Henryedits",
+    "business_type": "Freelance Video Editor",
+    "services": ["Long video editing", "Short video editing"],
+    "city": "Chennai",
+    "email": "henryedits@gmail.com",
+    "phone": "8890987890"
+  }
+},
+{
+  "conversation": "User: I am a YouTuber in Chennai with channel name Kvlogs. User: I do vlogs covering theatres in Chennai. User: contact: kvlogs002@gmail.com or phone: 7789909983.",
+  "ground_truth": {
+    "business_name": "Kvlogs",
+    "business_type": "Content Creator",
+    "services": ["Vlogging", "Theatre reviews", "Promotions"],
+    "city": "Chennai",
+    "email": "kvlogs002@gmail.com",
+    "phone": "7789909983"
+  }
+},
+
+ {
+    "conversation": "User: uh so like I run something called Spice Route maybe more like a takeaway? in Coimbatore... yeah food stuff like biryani, meals, snacks... contact? just mail spice.route@foodie.com or call me at 9786543210",
+    "ground_truth": {
+      "business_name": "Spice Route",
+      "business_type": "Takeaway",
+      "services": ["Biryani", "Meals", "Snacks"],
+      "city": "Coimbatore",
+      "email": "spice.route@foodie.com",
+      "phone": "9786543210"
+    }
+},
+  {
+    "conversation": "User: name is FitZone idk gym or fitness center whatever in Madurai we do like weight training cardio yoga sessions reach us @ fitzone123@gmail.com ph: 9123456780",
+    "ground_truth": {
+      "business_name": "FitZone",
+      "business_type": "Gym",
+      "services": ["Weight training", "Cardio", "Yoga"],
+      "city": "Madurai",
+      "email": "fitzone123@gmail.com",
+      "phone": "9123456780"
+    }
+  },
+  {
+    "conversation": "User: ok business is maybe 'PixelCraft' we design logos websites branding etc located somewhere in Trichy contact details hmm pixelcraft.designs@mail.com or 9000011111",
+    "ground_truth": {
+      "business_name": "PixelCraft",
+      "business_type": "Design Agency",
+      "services": ["Logo design", "Website design", "Branding"],
+      "city": "Trichy",
+      "email": "pixelcraft.designs@mail.com",
+      "phone": "9000011111"
+    }
+  },
+  {
+    "conversation": "User: it's like a tuition thing called Bright Minds in Salem subjects math science english for school kids you can ping at brightminds.edu@gmail.com number is +91 9345678901",
+    "ground_truth": {
+      "business_name": "Bright Minds",
+      "business_type": "Tuition Center",
+      "services": ["Math", "Science", "English"],
+      "city": "Salem",
+      "email": "brightminds.edu@gmail.com",
+      "phone": "9345678901"
+    }
+  },
+  {
+    "conversation": "User: hmm shop name GreenLeaf not sure store or nursery in Erode we sell plants pots fertilizers reach via greenleafnursery@eco.in or just call 9876501234",
+    "ground_truth": {
+      "business_name": "GreenLeaf",
+      "business_type": "Plant Nursery",
+      "services": ["Plants", "Pots", "Fertilizers"],
+      "city": "Erode",
+      "email": "greenleafnursery@eco.in",
+      "phone": "9876501234"
+    }
+  },
+  {
+    "conversation": "User: I own a specialty coffee roastery called Bean Theory in Mysore. User: We provide organic coffee beans, brewing equipment, and barista workshops. User: You can email us at hello@beantheory.in or call 9844012345.",
+    "ground_truth": {
+      "business_name": "Bean Theory", "business_type": "Coffee Roastery", "services": ["Organic coffee beans", "Brewing equipment", "Barista workshops"], "city": "Mysore", "email": "hello@beantheory.in", "phone": "9844012345"
+    }
+  },
+  {
+    "conversation": "User: I run a law firm named Vidhi Associates in Lucknow. User: We specialize in corporate law, property disputes, and family mediation. User: Contact us at contact@vidhiassociates.com or 9415098765.",
+    "ground_truth": {
+      "business_name": "Vidhi Associates", "business_type": "Law Firm", "services": ["Corporate law", "Property disputes", "Family mediation"], "city": "Lucknow", "email": "contact@vidhiassociates.com", "phone": "9415098765"
+    }
+  },
+  {
+    "conversation": "User: My venture is an organic farm called Green Earth in Shimla. User: We sell fresh apples, mountain honey, and handmade jams. User: Reach out via email at fresh@greenearth.org or 9816022334.",
+    "ground_truth": {
+      "business_name": "Green Earth", "business_type": "Organic Farm", "services": ["Apples", "Mountain honey", "Handmade jams"], "city": "Shimla", "email": "fresh@greenearth.org", "phone": "9816022334"
+    }
+  },
+  {
+    "conversation": "User: I am the founder of TechFix Solutions in Ahmedabad. User: We offer server maintenance, network security, and cloud migration services. User: Mail us at support@techfix.in or phone 7926345566.",
+    "ground_truth": {
+      "business_name": "TechFix Solutions", "business_type": "IT Services", "services": ["Server maintenance", "Network security", "Cloud migration"], "city": "Ahmedabad", "email": "support@techfix.in", "phone": "7926345566"
+    }
+  },
+  {
+    "conversation": "User: I own a pottery studio named Clay Craft in Pondicherry. User: We offer pottery classes, custom ceramic dinnerware, and studio rentals. User: Email claycraft@yahoo.com and call 9443211223.",
+    "ground_truth": {
+      "business_name": "Clay Craft", "business_type": "Pottery Studio", "services": ["Pottery classes", "Custom dinnerware", "Studio rentals"], "city": "Pondicherry", "email": "claycraft@yahoo.com", "phone": "9443211223"
+    }
+  },
+  {
+    "conversation": "User: I run an architecture firm called BluePrint Designs in Jaipur. User: We specialize in sustainable housing, urban planning, and interior remodeling. User: Contact at office@blueprint.com.",
+    "ground_truth": {
+      "business_name": "BluePrint Designs", "business_type": "Architecture Firm", "services": ["Sustainable housing", "Urban planning", "Interior remodeling"], "city": "Jaipur", "email": "office@blueprint.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a veterinary clinic called Paws & Claws in Chandigarh. User: We offer pet vaccinations, surgical procedures, and dental care. User: Call 9872011223 or email vet@pawsclaws.com.",
+    "ground_truth": {
+      "business_name": "Paws & Claws", "business_type": "Veterinary Clinic", "services": ["Vaccinations", "Surgical procedures", "Dental care"], "city": "Chandigarh", "email": "vet@pawsclaws.com", "phone": "9872011223"
+    }
+  },
+  {
+    "conversation": "User: I am a nutritionist running HealthFirst in Nagpur. User: I provide weight management, diabetic diet plans, and sports nutrition. User: Reach me at 9823055667.",
+    "ground_truth": {
+      "business_name": "HealthFirst", "business_type": "Nutritionist", "services": ["Weight management", "Diabetic diet plans", "Sports nutrition"], "city": "Nagpur", "email": "", "phone": "9823055667"
+    }
+  },
+  {
+    "conversation": "User: We operate a luxury resort called Serene Stay in Wayanad. User: We offer cottage bookings, trekking tours, and spa treatments. User: Contact serene@staywayanad.com or 9447088990.",
+    "ground_truth": {
+      "business_name": "Serene Stay", "business_type": "Resort", "services": ["Cottage bookings", "Trekking tours", "Spa treatments"], "city": "Wayanad", "email": "serene@staywayanad.com", "phone": "9447088990"
+    }
+  },
+  {
+    "conversation": "User: I run a language school called Polyglot Center in Kochi. User: We teach French, German, and Spanish. User: Email us at learn@polyglot.in or call 9846055443.",
+    "ground_truth": {
+      "business_name": "Polyglot Center", "business_type": "Language School", "services": ["French", "German", "Spanish"], "city": "Kochi", "email": "learn@polyglot.in", "phone": "9846055443"
+    }
+  },
+  {
+    "conversation": "User: I own an event management company called Sparkle Events in Indore. User: We organize corporate seminars, product launches, and gala dinners. User: Contact sparkle@events.in or 9826011224.",
+    "ground_truth": {
+      "business_name": "Sparkle Events", "business_type": "Event Management", "services": ["Corporate seminars", "Product launches", "Gala dinners"], "city": "Indore", "email": "sparkle@events.in", "phone": "9826011224"
+    }
+  },
+  {
+    "conversation": "User: I run a martial arts academy named Dragon Dojo in Dehradun. User: We teach Karate, Taekwondo, and self-defense for women. User: Phone is 9997011225 and email is dragon@dojo.com.",
+    "ground_truth": {
+      "business_name": "Dragon Dojo", "business_type": "Martial Arts Academy", "services": ["Karate", "Taekwondo", "Self-defense"], "city": "Dehradun", "email": "dragon@dojo.com", "phone": "9997011225"
+    }
+  },
+  {
+    "conversation": "User: My business is an antique shop called Vintage Treasures in Jodhpur. User: We sell colonial furniture, rare coins, and old paintings. User: Reach us at vintage@jodhpur.com.",
+    "ground_truth": {
+      "business_name": "Vintage Treasures", "business_type": "Antique Shop", "services": ["Colonial furniture", "Rare coins", "Old paintings"], "city": "Jodhpur", "email": "vintage@jodhpur.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a yoga studio called Soul Breath in Rishikesh. User: We offer Hatha yoga, meditation sessions, and detox retreats. User: Email soulbreath@yoga.com or call 9760011226.",
+    "ground_truth": {
+      "business_name": "Soul Breath", "business_type": "Yoga Studio", "services": ["Hatha yoga", "Meditation", "Detox retreats"], "city": "Rishikesh", "email": "soulbreath@yoga.com", "phone": "9760011226"
+    }
+  },
+  {
+    "conversation": "User: I run a laundry service called WashWise in Bhubaneshwar. User: We provide dry cleaning, steam ironing, and door-to-door delivery. User: Call 9437011227 or email wash@wise.in.",
+    "ground_truth": {
+      "business_name": "WashWise", "business_type": "Laundry Service", "services": ["Dry cleaning", "Steam ironing", "Delivery"], "city": "Bhubaneshwar", "email": "wash@wise.in", "phone": "9437011227"
+    }
+  },
+  {
+    "conversation": "User: I run a bookkeeping firm named FinTrack in Surat. User: We offer GST filing, tax auditing, and payroll management. User: Contact support@fintrack.com or 9825011228.",
+    "ground_truth": {
+      "business_name": "FinTrack", "business_type": "Accountancy Firm", "services": ["GST filing", "Tax auditing", "Payroll management"], "city": "Surat", "email": "support@fintrack.com", "phone": "9825011228"
+    }
+  },
+  {
+    "conversation": "User: My shop is called Tools & More in Jamshedpur. User: We sell power drills, welding machines, and safety gear. User: Email tools@more.in and call 9234011229.",
+    "ground_truth": {
+      "business_name": "Tools & More", "business_type": "Hardware Store", "services": ["Power drills", "Welding machines", "Safety gear"], "city": "Jamshedpur", "email": "tools@more.in", "phone": "9234011229"
+    }
+  },
+  {
+    "conversation": "User: I own a dance academy called Mudra Arts in Thiruvananthapuram. User: We teach Bharatanatyam, Mohiniyattam, and Kathakali. User: Reach at mudra@arts.in.",
+    "ground_truth": {
+      "business_name": "Mudra Arts", "business_type": "Dance Academy", "services": ["Bharatanatyam", "Mohiniyattam", "Kathakali"], "city": "Thiruvananthapuram", "email": "mudra@arts.in", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I run a travel blog and consultancy called WanderWise in Manali. User: We offer customized itinerary planning, hotel bookings, and guided treks. User: Contact wander@wise.com or 9805011230.",
+    "ground_truth": {
+      "business_name": "WanderWise", "business_type": "Travel Consultancy", "services": ["Itinerary planning", "Hotel bookings", "Guided treks"], "city": "Manali", "email": "wander@wise.com", "phone": "9805011230"
+    }
+  },
+  {
+    "conversation": "User: I am an optician at Vision Care in Madurai. User: We provide eye exams, prescription glasses, and contact lenses. User: Phone is 9444011231 and mail info@visioncare.com.",
+    "ground_truth": {
+      "business_name": "Vision Care", "business_type": "Optician", "services": ["Eye exams", "Prescription glasses", "Contact lenses"], "city": "Madurai", "email": "info@visioncare.com", "phone": "9444011231"
+    }
+  },
+  {
+    "conversation": "User: My business is called Urban Jungle in Noida. User: We design balcony gardens, indoor vertical walls, and rooftop lawns. User: Email urban@jungle.in or call 9910011232.",
+    "ground_truth": {
+      "business_name": "Urban Jungle", "business_type": "Landscaping", "services": ["Balcony gardens", "Indoor vertical walls", "Rooftop lawns"], "city": "Noida", "email": "urban@jungle.in", "phone": "9910011232"
+    }
+  },
+  {
+    "conversation": "User: I run a recruitment agency named Career Path in Gurgaon. User: We handle executive search, temporary staffing, and resume writing. User: Reach us at hiring@careerpath.in.",
+    "ground_truth": {
+      "business_name": "Career Path", "business_type": "Recruitment Agency", "services": ["Executive search", "Temporary staffing", "Resume writing"], "city": "Gurgaon", "email": "hiring@careerpath.in", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a musical instrument store called Rhythm House in Panjim. User: We sell guitars, keyboards, and drum sets. User: Contact rhythm@house.com or 9822011233.",
+    "ground_truth": {
+      "business_name": "Rhythm House", "business_type": "Music Store", "services": ["Guitars", "Keyboards", "Drum sets"], "city": "Panjim", "email": "rhythm@house.com", "phone": "9822011233"
+    }
+  },
+  {
+    "conversation": "User: I run a security firm called Shield Guard in Ghaziabad. User: We provide CCTV installation, security guards, and fire alarms. User: Email shield@guard.in and call 9810011234.",
+    "ground_truth": {
+      "business_name": "Shield Guard", "business_type": "Security Services", "services": ["CCTV installation", "Security guards", "Fire alarms"], "city": "Ghaziabad", "email": "shield@guard.in", "phone": "9810011234"
+    }
+  },
+  {
+    "conversation": "User: My venture is called Artisanal Bites in Puducherry. User: We make sourdough bread, croissants, and fruit tarts. User: Reach at bites@puducherry.com.",
+    "ground_truth": {
+      "business_name": "Artisanal Bites", "business_type": "Bakery", "services": ["Sourdough bread", "Croissants", "Fruit tarts"], "city": "Puducherry", "email": "bites@puducherry.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: I own a tattoo studio named Ink Magic in Shillong. User: We offer custom tattoos, piercings, and cover-up art. User: Call 9436011235 or email ink@magic.in.",
+    "ground_truth": {
+      "business_name": "Ink Magic", "business_type": "Tattoo Studio", "services": ["Custom tattoos", "Piercings", "Cover-up art"], "city": "Shillong", "email": "ink@magic.in", "phone": "9436011235"
+    }
+  },
+  {
+    "conversation": "User: I run a sports academy called Victory Sports in Gwalior. User: We offer coaching in cricket, football, and lawn tennis. User: Contact victory@sports.com or 9425011236.",
+    "ground_truth": {
+      "business_name": "Victory Sports", "business_type": "Sports Academy", "services": ["Cricket coaching", "Football coaching", "Tennis coaching"], "city": "Gwalior", "email": "victory@sports.com", "phone": "9425011236"
+    }
+  },
+  {
+    "conversation": "User: I run a specialized library called Readers Nook in Kanpur. User: We have a collection of classic literature, academic journals, and comics. User: Email us at readers@nook.com or call 9336011237.",
+    "ground_truth": {
+      "business_name": "Readers Nook", "business_type": "Private Library", "services": ["Classic literature", "Academic journals", "Comics"], "city": "Kanpur", "email": "readers@nook.com", "phone": "9336011237"
+    }
+  },
+  {
+    "conversation": "User: I am a life coach at Mind Shift in Bhopal. User: I provide stress management, career guidance, and relationship counseling. User: Reach me at coach@mindshift.in.",
+    "ground_truth": {
+      "business_name": "Mind Shift", "business_type": "Life Coach", "services": ["Stress management", "Career guidance", "Relationship counseling"], "city": "Bhopal", "email": "coach@mindshift.in", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: My business is called Print Pro in Agartala. User: We do digital printing, banner making, and visiting cards. User: Contact print@pro.in or 9436011238.",
+    "ground_truth": {
+      "business_name": "Print Pro", "business_type": "Printing Services", "services": ["Digital printing", "Banner making", "Visiting cards"], "city": "Agartala", "email": "print@pro.in", "phone": "9436011238"
+    }
+  },
+
+
+  {
+    "conversation": "User: hi i started a smal shop called 'Pet Joy' in vellore. User: we selling dog food and toys and also belts. User: pls mail at petjoy.vlr@gmail.com or call 9876543211.",
+    "ground_truth": {
+      "business_name": "Pet Joy", "business_type": "Pet Shop", "services": ["Dog food", "Toys", "Belts"], "city": "Vellore", "email": "petjoy.vlr@gmail.com", "phone": "9876543211"
+    }
+  },
+  {
+    "conversation": "User: hello... i am runing a tailoring shop 'Perfect Fit' in trichy. User: i do stiching for blouse, chudidar and kids dress. User: reach me at 9123456789 or mail perfectfit@gmail.com.",
+    "ground_truth": {
+      "business_name": "Perfect Fit", "business_type": "Tailoring Shop", "services": ["Blouse stitching", "Chudidar stitching", "Kids dress stitching"], "city": "Trichy", "email": "perfectfit@gmail.com", "phone": "9123456789"
+    }
+  },
+  {
+    "conversation": "User: i have a tiffin center 'Amma Kitchen' in madurai. User: we serve idly, dosa and pongal in morning. User: contact number is 9845678902.",
+    "ground_truth": {
+      "business_name": "Amma Kitchen", "business_type": "Restaurant", "services": ["Idly", "Dosa", "Pongal"], "city": "Madurai", "email": "", "phone": "9845678902"
+    }
+  },
+  {
+    "conversation": "User: umm i do freelance wedding makeup in chennai... name is 'Glow by Priya'. User: i do bridal makeup, hairstyling and saree draping. User: mail me glowpriya@gmail.com.",
+    "ground_truth": {
+      "business_name": "Glow by Priya", "business_type": "Makeup Artist", "services": ["Bridal makeup", "Hairstyling", "Saree draping"], "city": "Chennai", "email": "glowpriya@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hey... my gym is 'Beast Mode' in salem. User: we have crossfit, yoga and weight lifing. User: ph is 9344556677. no email.",
+    "ground_truth": {
+      "business_name": "Beast Mode", "business_type": "Gym", "services": ["Crossfit", "Yoga", "Weight lifting"], "city": "Salem", "email": "", "phone": "9344556677"
+    }
+  },
+  {
+    "conversation": "User: i running a small milk shop in erode called 'Aavin Milk Point'. User: we sell milk, curd and ghee. User: call me 9988776644. thank you.",
+    "ground_truth": {
+      "business_name": "Aavin Milk Point", "business_type": "Dairy Shop", "services": ["Milk", "Curd", "Ghee"], "city": "Erode", "email": "", "phone": "9988776644"
+    }
+  },
+  {
+    "conversation": "User: hello sir... i have a xerox shop 'Fast Print' in tirunelveli. User: we do xerox, lamination and spiral binding. User: contact fastprint@gmail.com.",
+    "ground_truth": {
+      "business_name": "Fast Print", "business_type": "Printing Shop", "services": ["Xerox", "Lamination", "Spiral binding"], "city": "Tirunelveli", "email": "fastprint@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: i am doing plumbing works in pondy. business name is 'Water Fix'. User: i repair pipes, taps and motor fixing. User: reach me at 9789012345.",
+    "ground_truth": {
+      "business_name": "Water Fix", "business_type": "Plumbing", "services": ["Pipe repair", "Tap repair", "Motor fixing"], "city": "Pondicherry", "email": "", "phone": "9789012345"
+    }
+  },
+  {
+    "conversation": "User: hi i own 'Sweet Corner' in tanjore. User: we sell laddu, jalebi and halwa. User: contact 9654321098. mail is sweetcorner@gmail.com.",
+    "ground_truth": {
+      "business_name": "Sweet Corner", "business_type": "Sweet Shop", "services": ["Laddu", "Jalebi", "Halwa"], "city": "Thanjavur", "email": "sweetcorner@gmail.com", "phone": "9654321098"
+    }
+  },
+  {
+    "conversation": "User: i have a mobile recharge shop in dindigul called 'Siva Mobiles'. User: we do recharge, sim card and screen gard. User: ph is 9870123456.",
+    "ground_truth": {
+      "business_name": "Siva Mobiles", "business_type": "Mobile Shop", "services": ["Recharge", "Sim cards", "Screen guard"], "city": "Dindigul", "email": "", "phone": "9870123456"
+    }
+  },
+  {
+    "conversation": "User: hello... i am runing 'Green Garden' in hosur. User: we sell rose plant, fruit tree and soil. User: mail greengarden@gmail.com or 9090808070.",
+    "ground_truth": {
+      "business_name": "Green Garden", "business_type": "Nursery", "services": ["Rose plants", "Fruit trees", "Soil"], "city": "Hosur", "email": "greengarden@gmail.com", "phone": "9090808070"
+    }
+  },
+  {
+    "conversation": "User: i am a driver and have 'Safe Travels' in karur. User: we provide car for rent and airport pickup. User: call 9443322114.",
+    "ground_truth": {
+      "business_name": "Safe Travels", "business_type": "Travel Agency", "services": ["Car rental", "Airport pickup"], "city": "Karur", "email": "", "phone": "9443322114"
+    }
+  },
+  {
+    "conversation": "User: hi... my shop name 'Style Look' in namakkal. User: we do hair cut, shaving and massage for men. User: reach us at 9360123456.",
+    "ground_truth": {
+      "business_name": "Style Look", "business_type": "Salon", "services": ["Hair cut", "Shaving", "Massage"], "city": "Namakkal", "email": "", "phone": "9360123456"
+    }
+  },
+  {
+    "conversation": "User: i am selling home made pickles... name is 'Tasty Bites' in theni. User: mango pickle, lemon pickle and garlic pickle. User: mail tastybites@gmail.com.",
+    "ground_truth": {
+      "business_name": "Tasty Bites", "business_type": "Food Business", "services": ["Mango pickle", "Lemon pickle", "Garlic pickle"], "city": "Theni", "email": "tastybites@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hello i have 'Book World' in tirupur. User: we sell old books and school notebooks. User: contact 9176543210.",
+    "ground_truth": {
+      "business_name": "Book World", "business_type": "Bookstore", "services": ["Old books", "School notebooks"], "city": "Tirupur", "email": "", "phone": "9176543210"
+    }
+  },
+  {
+    "conversation": "User: hi i am running 'Cool Air' ac service in chennai. User: we do ac repair, gas filling and cleaning. User: reach 9884433221.",
+    "ground_truth": {
+      "business_name": "Cool Air", "business_type": "AC Service", "services": ["AC repair", "Gas filling", "Cleaning"], "city": "Chennai", "email": "", "phone": "9884433221"
+    }
+  },
+  {
+    "conversation": "User: i have a small tea shop 'Chai Time' in ooty. User: we have tea, coffee and hot chocolate. User: mail chaitime@gmail.com.",
+    "ground_truth": {
+      "business_name": "Chai Time", "business_type": "Cafe", "services": ["Tea", "Coffee", "Hot chocolate"], "city": "Ooty", "email": "chaitime@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hello... i am doing wood works in ramanathapuram. company is 'Solid Wood'. User: we make doors, windows and cupboard. User: call 9500123456.",
+    "ground_truth": {
+      "business_name": "Solid Wood", "business_type": "Carpentry", "services": ["Doors", "Windows", "Cupboards"], "city": "Ramanathapuram", "email": "", "phone": "9500123456"
+    }
+  },
+  {
+    "conversation": "User: hi i have 'Cycle House' in kanchipuram. User: we sell new cycles and also repair. User: contact 9380123456.",
+    "ground_truth": {
+      "business_name": "Cycle House", "business_type": "Cycle Shop", "services": ["New cycles", "Cycle repair"], "city": "Kanchipuram", "email": "", "phone": "9380123456"
+    }
+  },
+  {
+    "conversation": "User: i am runing 'Bright Lights' shop in kumbakonam. User: we selling led bulbs, tubes and wires. User: mail brightlights@gmail.com.",
+    "ground_truth": {
+      "business_name": "Bright Lights", "business_type": "Electrical Shop", "services": ["LED bulbs", "Tubes", "Wires"], "city": "Kumbakonam", "email": "brightlights@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hello... i have 'Fresh Fish' stall in nagapattinam. User: we sell sea fish and prawns. User: contact 9750123456.",
+    "ground_truth": {
+      "business_name": "Fresh Fish", "business_type": "Fish Stall", "services": ["Sea fish", "Prawns"], "city": "Nagapattinam", "email": "", "phone": "9750123456"
+    }
+  },
+  {
+    "conversation": "User: hi i am doing painting works in cuddalore... name is 'Color Magic'. User: house painting and wall design. User: call 9840123456.",
+    "ground_truth": {
+      "business_name": "Color Magic", "business_type": "Painting", "services": ["House painting", "Wall design"], "city": "Cuddalore", "email": "", "phone": "9840123456"
+    }
+  },
+  {
+    "conversation": "User: i run 'Kids Zone' toy shop in sivakasi. User: we have plastic toys, puzzles and balls. User: mail kidszone@gmail.com.",
+    "ground_truth": {
+      "business_name": "Kids Zone", "business_type": "Toy Shop", "services": ["Plastic toys", "Puzzles", "Balls"], "city": "Sivakasi", "email": "kidszone@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hello i have 'Ganesh Store' in tiruvannamalai. User: we sell rice, dhal and oil. User: contact 9150123456.",
+    "ground_truth": {
+      "business_name": "Ganesh Store", "business_type": "Grocery Shop", "services": ["Rice", "Dhal", "Oil"], "city": "Tiruvannamalai", "email": "", "phone": "9150123456"
+    }
+  },
+  {
+    "conversation": "User: hi i am runing 'Sri Devi' flower shop in madurai. User: we sell jasmine, rose and garlands. User: ph is 9865123456.",
+    "ground_truth": {
+      "business_name": "Sri Devi", "business_type": "Flower Shop", "services": ["Jasmine", "Rose", "Garlands"], "city": "Madurai", "email": "", "phone": "9865123456"
+    }
+  },
+  {
+    "conversation": "User: i am doing 'Quick Service' bike repair in pollachi. User: we do engine work and water wash. User: reach 9710123456.",
+    "ground_truth": {
+      "business_name": "Quick Service", "business_type": "Bike Repair", "services": ["Engine work", "Water wash"], "city": "Pollachi", "email": "", "phone": "9710123456"
+    }
+  },
+  {
+    "conversation": "User: hello i have 'Home Comforts' furniture in perambalur. User: we sell chairs and tables. User: mail homecomforts@gmail.com.",
+    "ground_truth": {
+      "business_name": "Home Comforts", "business_type": "Furniture Shop", "services": ["Chairs", "Tables"], "city": "Perambalur", "email": "homecomforts@gmail.com", "phone": ""
+    }
+  },
+  {
+    "conversation": "User: hi... my shop 'Gift Palace' in pudukkottai. User: we have photo frames and dolls. User: contact 9486123456.",
+    "ground_truth": {
+      "business_name": "Gift Palace", "business_type": "Gift Shop", "services": ["Photo frames", "Dolls"], "city": "Pudukkottai", "email": "", "phone": "9486123456"
+    }
+  },
+  {
+    "conversation": "User: i run 'Auto Care' spare parts in ambur. User: we sell clutch wire, brake pads. User: ph 9345123456.",
+    "ground_truth": {
+      "business_name": "Auto Care", "business_type": "Spare Parts Shop", "services": ["Clutch wire", "Brake pads"], "city": "Ambur", "email": "", "phone": "9345123456"
+    }
+  },
+  {
+    "conversation": "User: hello i am selling 'Best Choice' water purifier in vaniyambadi. User: we do service and sales. User: call 9123123456.",
+    "ground_truth": {
+      "business_name": "Best Choice", "business_type": "Water Purifier Shop", "services": ["Sales", "Service"], "city": "Vaniyambadi", "email": "", "phone": "9123123456"
+    }
+  },
+
+
+  {
+    "conversation": "User: so i have this thing... its basically 'The Studio' but we also call it 'Artsy'. User: located in the heart of Mumbai, near the station. User: we do canvas painting, digital art, oh and wait, pottery too. User: if you want to reach me just mail at artsy.mumbai@gmail.com or no wait use artsy.new@gmail.com. User: ph is nine eight seven six five four three two one zero.",
+    "ground_truth": {
+      "business_name": "Artsy", "business_type": "Art Studio", "services": ["Canvas painting", "Digital art", "Pottery"], "city": "Mumbai", "email": "artsy.new@gmail.com", "phone": "9876543210"
+    }
+  },
+  {
+    "conversation": "User: i run a place in bangalore... names 'Techno Hub'. User: we fix things... you know, like macbooks, iphones, mostly apple stuff. User: oh i forgot to say we also do data recovery. User: contact is easy, just call 9900... no that's my home number, call 9900887766. User: mail is tech.hub@outlook.com or something like that.",
+    "ground_truth": {
+      "business_name": "Techno Hub", "business_type": "Electronics Repair", "services": ["Macbook repair", "iPhone repair", "Data recovery"], "city": "Bangalore", "email": "tech.hub@outlook.com", "phone": "9900887766"
+    }
+  },
+  {
+    "conversation": "User: name is 'Fast Track' i think? yeah 'Fast Track Courier' in Delhi. User: we send packages worldwide and local also. User: we do packing too. User: email? hmm info@ftcourier.com. User: wait the office moved to Gurugram recently. User: call us 9811098110.",
+    "ground_truth": {
+      "business_name": "Fast Track Courier", "business_type": "Courier Service", "services": ["Worldwide delivery", "Local delivery", "Packing"], "city": "Gurugram", "email": "info@ftcourier.com", "phone": "9811098110"
+    }
+  },
+  {
+    "conversation": "User: okay so my business is 'Healthy Life'... or is it 'Life Healthy'? let's go with 'Healthy Life' in Pune. User: we sell organic honey, cold pressed oils, and spices. User: you can reach me at 9822... actually 9822012345. User: mail is sales@healthylife.in... no wait use support@healthylife.in.",
+    "ground_truth": {
+      "business_name": "Healthy Life", "business_type": "Organic Store", "services": ["Organic honey", "Cold pressed oils", "Spices"], "city": "Pune", "email": "support@healthylife.in", "phone": "9822012345"
+    }
+  },
+  {
+    "conversation": "User: its a car place called 'Wheelz' in Chennai... wait no, it's 'Wheelz Pro'. User: we do alignment, balancing, and nitrogen air. User: mail is wheelz.pro.chennai@gmail.com. User: phone number? oh i don't have it on me... wait, it's 9003190031.",
+    "ground_truth": {
+      "business_name": "Wheelz Pro", "business_type": "Car Service", "services": ["Alignment", "Balancing", "Nitrogen air"], "city": "Chennai", "email": "wheelz.pro.chennai@gmail.com", "phone": "9003190031"
+    }
+  },
+  {
+    "conversation": "User: i'm a freelance dev... people call me 'Code Wizard'. User: I'm in Hyderabad mostly but I work from everywhere. User: I make apps, websites, and do SEO. User: contact? mail code.wiz@gmail.com. User: ph is +91-99887-76655.",
+    "ground_truth": {
+      "business_name": "Code Wizard", "business_type": "Freelance Developer", "services": ["App development", "Web development", "SEO"], "city": "Hyderabad", "email": "code.wiz@gmail.com", "phone": "9988776655"
+    }
+  },
+  {
+    "conversation": "User: 'Pet Paradise' is the name in Jaipur. User: we do grooming, boarding, and we sell food. User: wait i changed the name to 'Happy Paws' last week. User: mail is happy.paws.jpr@gmail.com. User: ph is 9829098290.",
+    "ground_truth": {
+      "business_name": "Happy Paws", "business_type": "Pet Shop", "services": ["Grooming", "Boarding", "Pet food"], "city": "Jaipur", "email": "happy.paws.jpr@gmail.com", "phone": "9829098290"
+    }
+  },
+  {
+    "conversation": "User: uh... i run a bakery 'Sugar High' in Lucknow. User: cakes, cookies... oh and we started doing classes too. User: contact? uh... try 9415194151. User: mail is sugar.high@yahoo.com... no wait sugarhigh.lko@gmail.com.",
+    "ground_truth": {
+      "business_name": "Sugar High", "business_type": "Bakery", "services": ["Cakes", "Cookies", "Baking classes"], "city": "Lucknow", "email": "sugarhigh.lko@gmail.com", "phone": "9415194151"
+    }
+  },
+  {
+    "conversation": "User: i have a shop 'Mega Mart' in Trichy... no it's 'Mega Store'. User: we sell everything like snacks, stationary, plastics. User: mail megastore.trichy@gmail.com. User: call 9842198421.",
+    "ground_truth": {
+      "business_name": "Mega Store", "business_type": "General Store", "services": ["Snacks", "Stationery", "Plastics"], "city": "Trichy", "email": "megastore.trichy@gmail.com", "phone": "9842198421"
+    }
+  },
+  {
+    "conversation": "User: its 'Pure Water' in Coimbatore. User: we sell filters and we also repair them. User: oh and we do annual maintenance contracts. User: call me at 9894098940 or mail pure.water.cbe@gmail.com.",
+    "ground_truth": {
+      "business_name": "Pure Water", "business_type": "Water Purifier Shop", "services": ["Filters", "Repair", "Maintenance contracts"], "city": "Coimbatore", "email": "pure.water.cbe@gmail.com", "phone": "9894098940"
+    }
+  },
+  {
+    "conversation": "User: my gym is 'Iron Fit' in Madurai. User: wait, i think it's 'Iron Fitness'. User: we have personal trainers, steam bath, and cardio. User: mail us at iron.fit.mdu@gmail.com. User: phone is 9344093440.",
+    "ground_truth": {
+      "business_name": "Iron Fitness", "business_type": "Gym", "services": ["Personal training", "Steam bath", "Cardio"], "city": "Madurai", "email": "iron.fit.mdu@gmail.com", "phone": "9344093440"
+    }
+  },
+  {
+    "conversation": "User: i run 'Bright Minds' in Salem. User: we teach math and physics. User: wait we added chemistry too for class 12. User: mail brightminds.salem@gmail.com. User: ph is 9360093600.",
+    "ground_truth": {
+      "business_name": "Bright Minds", "business_type": "Coaching Center", "services": ["Math", "Physics", "Chemistry"], "city": "Salem", "email": "brightminds.salem@gmail.com", "phone": "9360093600"
+    }
+  },
+  {
+    "conversation": "User: my place is 'Green Leaf' in Erode. User: we sell plants, pots... and manure. User: wait i moved the shop to Tiruppur recently. User: contact 9865098650. mail is greenleaf@gmail.com.",
+    "ground_truth": {
+      "business_name": "Green Leaf", "business_type": "Nursery", "services": ["Plants", "Pots", "Manure"], "city": "Tiruppur", "email": "greenleaf@gmail.com", "phone": "9865098650"
+    }
+  },
+  {
+    "conversation": "User: its 'Quick Fix' in Vellore. User: we repair laptops and desktops. User: wait we also do mobile screen replacement. User: ph is 9894498944. mail quickfix.vlr@gmail.com.",
+    "ground_truth": {
+      "business_name": "Quick Fix", "business_type": "Repair Shop", "services": ["Laptop repair", "Desktop repair", "Screen replacement"], "city": "Vellore", "email": "quickfix.vlr@gmail.com", "phone": "9894498944"
+    }
+  },
+  {
+    "conversation": "User: i have 'Style Hub' in Pondy. User: shirts, pants... oh and belts too. User: wait, it's actually 'Style Hub Boutique'. User: mail stylehub.pondy@gmail.com. User: ph 9443094430.",
+    "ground_truth": {
+      "business_name": "Style Hub Boutique", "business_type": "Boutique", "services": ["Shirts", "Pants", "Belts"], "city": "Pondicherry", "email": "stylehub.pondy@gmail.com", "phone": "9443094430"
+    }
+  },
+  {
+    "conversation": "User: its 'Travel World' in Trichy. User: flight tickets, bus booking... wait we also do visas. User: mail travelworld.trichy@gmail.com. User: ph is 9843098430.",
+    "ground_truth": {
+      "business_name": "Travel World", "business_type": "Travel Agency", "services": ["Flight tickets", "Bus booking", "Visa services"], "city": "Trichy", "email": "travelworld.trichy@gmail.com", "phone": "9843098430"
+    }
+  },
+  {
+    "conversation": "User: i run 'Home Needs' in Tanjore. User: cleaning supplies, mops... and buckets. User: wait we also sell plastic chairs now. User: ph 9600096000. mail homeneeds.tnj@gmail.com.",
+    "ground_truth": {
+      "business_name": "Home Needs", "business_type": "Departmental Store", "services": ["Cleaning supplies", "Mops", "Plastic chairs"], "city": "Thanjavur", "email": "homeneeds.tnj@gmail.com", "phone": "9600096000"
+    }
+  },
+  {
+    "conversation": "User: its 'Smart Care' in Madurai. User: mobile repair, battery change... wait we also sell used phones. User: mail smartcare.mdu@gmail.com. User: ph 9047090470.",
+    "ground_truth": {
+      "business_name": "Smart Care", "business_type": "Mobile Shop", "services": ["Mobile repair", "Battery change", "Used phones"], "city": "Madurai", "email": "smartcare.mdu@gmail.com", "phone": "9047090470"
+    }
+  },
+  {
+    "conversation": "User: my shop is 'Silver Shine' in Salem. User: silver jewelry, anklets... and vessels. User: wait we also have some gold jewelry now. User: ph 9345093450. mail silvershine.salem@gmail.com.",
+    "ground_truth": {
+      "business_name": "Silver Shine", "business_type": "Jewelry Shop", "services": ["Silver jewelry", "Vessels", "Gold jewelry"], "city": "Salem", "email": "silvershine.salem@gmail.com", "phone": "9345093450"
+    }
+  },
+  {
+    "conversation": "User: its 'Fresh Fruits' in Coimbatore. User: apples, oranges... and mangoes. User: wait we also have exotic fruits like dragon fruit. User: mail freshfruits.cbe@gmail.com. User: ph 9894198941.",
+    "ground_truth": {
+      "business_name": "Fresh Fruits", "business_type": "Fruit Shop", "services": ["Apples", "Oranges", "Exotic fruits"], "city": "Coimbatore", "email": "freshfruits.cbe@gmail.com", "phone": "9894198941"
+    }
+  },
+  {
+    "conversation": "User: I run a design studio... let's call it 'Pixel Perfect'. No, wait, it's 'Pixel Craft'. User: we're based in the tech park in Bangalore. User: we do UI design, UX research, and branding. User: if you need us, mail at hello@pixelcraft.studio or wait, use pixelcraft.blr@gmail.com. User: ph is nine-zero-zero-eight-eight-seven-seven-six-six-five.",
+    "ground_truth": {
+      "business_name": "Pixel Craft", "business_type": "Design Studio", "services": ["UI design", "UX research", "Branding"], "city": "Bangalore", "email": "pixelcraft.blr@gmail.com", "phone": "9008877665"
+    }
+  },
+  {
+    "conversation": "User: it's a food joint called 'Spice Box' in Kochi. User: we serve biryani, fried rice, and no wait, we stopped doing fried rice, it's just biryani and kebabs now. User: contact at spicebox.kochi@gmail.com. User: number is 9847... let me check... 9847012345.",
+    "ground_truth": {
+      "business_name": "Spice Box", "business_type": "Restaurant", "services": ["Biryani", "Kebabs"], "city": "Kochi", "email": "spicebox.kochi@gmail.com", "phone": "9847012345"
+    }
+  },
+  {
+    "conversation": "User: I have this business in Noida called 'Clean Pro'. User: we do sofa cleaning, carpet cleaning... and pest control too. User: wait, I sold the pest control part, so just cleaning now. User: mail cleanpro.noida@outlook.com. User: ph 9911099110.",
+    "ground_truth": {
+      "business_name": "Clean Pro", "business_type": "Cleaning Service", "services": ["Sofa cleaning", "Carpet cleaning"], "city": "Noida", "email": "cleanpro.noida@outlook.com", "phone": "9911099110"
+    }
+  },
+  {
+    "conversation": "User: it's 'Tech Savvy' in Pune. User: we sell laptops and accessories. User: wait we also do laptop rentals for students. User: mail techsavvy.pune@gmail.com. User: call 9822198221.",
+    "ground_truth": {
+      "business_name": "Tech Savvy", "business_type": "Computer Shop", "services": ["Laptops", "Accessories", "Laptop rentals"], "city": "Pune", "email": "techsavvy.pune@gmail.com", "phone": "9822198221"
+    }
+  },
+  {
+    "conversation": "User: I'm a yoga teacher... 'Yoga with Anil' is the name in Mysore. User: I do group classes and personal training. User: wait I only do online classes now. User: mail yoga.anil@gmail.com. User: phone is 9844198441.",
+    "ground_truth": {
+      "business_name": "Yoga with Anil", "business_type": "Yoga Teacher", "services": ["Online yoga classes", "Personal training"], "city": "Mysore", "email": "yoga.anil@gmail.com", "phone": "9844198441"
+    }
+  },
+  {
+    "conversation": "User: it's 'Auto Hub' in Chennai. User: we do car wash and detailing. User: wait we also do ceramic coating. User: mail autohub.chennai@gmail.com. User: call 9003090030.",
+    "ground_truth": {
+      "business_name": "Auto Hub", "business_type": "Car Service", "services": ["Car wash", "Detailing", "Ceramic coating"], "city": "Chennai", "email": "autohub.chennai@gmail.com", "phone": "9003090030"
+    }
+  },
+  {
+    "conversation": "User: I run 'Book Nook' in Bangalore. User: we sell new books and stationery. User: wait we also have a small cafe inside. User: mail booknook.blr@gmail.com. User: ph 9900199001.",
+    "ground_truth": {
+      "business_name": "Book Nook", "business_type": "Bookstore", "services": ["Books", "Stationery", "Cafe"], "city": "Bangalore", "email": "booknook.blr@gmail.com", "phone": "9900199001"
+    }
+  },
+  {
+    "conversation": "User: it's 'Style Studio' in Hyderabad. User: we do haircuts and facials. User: wait we also do bridal makeup now. User: mail stylestudio.hyd@gmail.com. User: call 9849098490.",
+    "ground_truth": {
+      "business_name": "Style Studio", "business_type": "Salon", "services": ["Haircuts", "Facials", "Bridal makeup"], "city": "Hyderabad", "email": "stylestudio.hyd@gmail.com", "phone": "9849098490"
+    }
+  },
+  {
+    "conversation": "User: I have 'Pet Care' in Delhi. User: we sell pet food and accessories. User: wait we also do dog walking services. User: mail petcare.delhi@gmail.com. User: ph 9811198111.",
+    "ground_truth": {
+      "business_name": "Pet Care", "business_type": "Pet Shop", "services": ["Pet food", "Accessories", "Dog walking"], "city": "Delhi", "email": "petcare.delhi@gmail.com", "phone": "9811198111"
+    }
+  },
+  {
+    "conversation": "User: it's 'Healthy Bites' in Pune. User: we sell salads and juices. User: wait we also do meal subscriptions. User: mail healthybites.pune@gmail.com. User: ph 9823198231.",
+    "ground_truth": {
+      "business_name": "Healthy Bites", "business_type": "Health Food", "services": ["Salads", "Juices", "Meal subscriptions"], "city": "Pune", "email": "healthybites.pune@gmail.com", "phone": "9823198231"
+    }
+  },
+  {
+    "conversation": "User: I run 'Fix It' in Gurgaon. User: we repair ACs and fridges. User: wait we also do washing machine repair. User: mail fixit.gurgaon@gmail.com. User: call 9911199111.",
+    "ground_truth": {
+      "business_name": "Fix It", "business_type": "Repair Service", "services": ["AC repair", "Fridge repair", "Washing machine repair"], "city": "Gurgaon", "email": "fixit.gurgaon@gmail.com", "phone": "9911199111"
+    }
+  },
+  {
+    "conversation": "User: it's 'Bright Future' in Noida. User: we do career counseling and study abroad. User: wait we also do IELTS coaching. User: mail brightfuture.noida@gmail.com. User: ph 9911299112.",
+    "ground_truth": {
+      "business_name": "Bright Future", "business_type": "Education Consultancy", "services": ["Career counseling", "Study abroad", "IELTS coaching"], "city": "Noida", "email": "brightfuture.noida@gmail.com", "phone": "9911299112"
+    }
+  },
+  {
+    "conversation": "User: I have 'Garden Fresh' in Bangalore. User: we sell vegetables and fruits. User: wait we also have organic milk now. User: mail gardenfresh.blr@gmail.com. User: ph 9900299002.",
+    "ground_truth": {
+      "business_name": "Garden Fresh", "business_type": "Grocery Store", "services": ["Vegetables", "Fruits", "Organic milk"], "city": "Bangalore", "email": "gardenfresh.blr@gmail.com", "phone": "9900299002"
+    }
+  },
+  {
+    "conversation": "User: it's 'Home Secure' in Mumbai. User: we do CCTV and alarm systems. User: wait we also do smart locks. User: mail homesecure.mumbai@gmail.com. User: call 9820098200.",
+    "ground_truth": {
+      "business_name": "Home Secure", "business_type": "Security Systems", "services": ["CCTV", "Alarm systems", "Smart locks"], "city": "Mumbai", "email": "homesecure.mumbai@gmail.com", "phone": "9820098200"
+    }
+  },
+  {
+    "conversation": "User: I run 'Travel Ease' in Chennai. User: we do passport and visa services. User: wait we also do travel insurance. User: mail travelease.chennai@gmail.com. User: ph 9003190031.",
+    "ground_truth": {
+      "business_name": "Travel Ease", "business_type": "Travel Agency", "services": ["Passport services", "Visa services", "Travel insurance"], "city": "Chennai", "email": "travelease.chennai@gmail.com", "phone": "9003190031"
+    }
+  },
+  {
+    "conversation": "User: it's 'Fit Life' in Hyderabad. User: we have gym and yoga. User: wait we also have a nutritionist. User: mail fitlife.hyd@gmail.com. User: ph 9849198491.",
+    "ground_truth": {
+      "business_name": "Fit Life", "business_type": "Fitness Center", "services": ["Gym", "Yoga", "Nutritionist"], "city": "Hyderabad", "email": "fitlife.hyd@gmail.com", "phone": "9849198491"
+    }
+  },
+  {
+    "conversation": "User: I have 'Kids Corner' in Delhi. User: we sell toys and clothes. User: wait we also have a small play area. User: mail kidscorner.delhi@gmail.com. User: ph 9811298112.",
+    "ground_truth": {
+      "business_name": "Kids Corner", "business_type": "Kids Store", "services": ["Toys", "Clothes", "Play area"], "city": "Delhi", "email": "kidscorner.delhi@gmail.com", "phone": "9811298112"
+    }
+  },
+  {
+    "conversation": "User: it's 'Smart Home' in Pune. User: we do interior design and furniture. User: wait we also do modular kitchens. User: mail smarthome.pune@gmail.com. User: ph 9823298232.",
+    "ground_truth": {
+      "business_name": "Smart Home", "business_type": "Interior Design", "services": ["Interior design", "Furniture", "Modular kitchens"], "city": "Pune", "email": "smarthome.pune@gmail.com", "phone": "9823298232"
+    }
+  },
+  {
+    "conversation": "User: I run 'Auto Fix' in Gurgaon. User: we do car repair and service. User: wait we also do car paint. User: mail autofix.gurgaon@gmail.com. User: call 9911399113.",
+    "ground_truth": {
+      "business_name": "Auto Fix", "business_type": "Car Service", "services": ["Car repair", "Service", "Car paint"], "city": "Gurgaon", "email": "autofix.gurgaon@gmail.com", "phone": "9911399113"
+    }
+  },
+  {
+    "conversation": "User: it's 'Bright Lights' in Noida. User: we sell electrical items and fans. User: wait we also do home wiring. User: mail brightlights.noida@gmail.com. User: ph 9911499114.",
+    "ground_truth": {
+      "business_name": "Bright Lights", "business_type": "Electrical Shop", "services": ["Electrical items", "Fans", "Home wiring"], "city": "Noida", "email": "brightlights.noida@gmail.com", "phone": "9911499114"
+    }
+  }
+]

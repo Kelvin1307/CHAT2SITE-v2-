@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book Haven</title>
+<title>{{ data.brand.name }}</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,7 +19,7 @@ body { font-family: 'Inter', sans-serif; }
 
 <!-- TOP BAR -->
 <div class="bg-slate-900 text-white text-xs py-2 px-4 flex justify-between">
-    <span>Welcome to Book Haven – Your Gateway to Knowledge</span>
+    <span>{{ data.topbar.message }}</span>
     <div>
         <a href="#">Track</a>
         <a href="#">Support</a>
@@ -32,19 +32,13 @@ body { font-family: 'Inter', sans-serif; }
 
 <div class="flex items-center space-x-2">
 <i class="fas fa-bolt text-blue-600"></i>
-<span class="font-bold text-xl">Book Haven</span>
+<span class="font-bold text-xl">{{ data.brand.name }}</span>
 </div>
 
 <div class="hidden md:flex space-x-6">
-
-<a href="/"></a>
-
-<a href="/shop"></a>
-
-<a href="/about"></a>
-
-<a href="/contact"></a>
-
+{% for item in data.nav %}
+<a href="{{ item.link }}">{{ item.name }}</a>
+{% endfor %}
 </div>
 
 <div class="flex items-center space-x-4">
@@ -55,7 +49,11 @@ body { font-family: 'Inter', sans-serif; }
 <!-- CART -->
 <div class="relative">
 <i class="fas fa-shopping-cart text-xl"></i>
-
+{% if data.cart.count > 0 %}
+<span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs px-1 rounded-full">
+{{ data.cart.count }}
+</span>
+{% endif %}
 </div>
 
 </div>
@@ -67,25 +65,25 @@ body { font-family: 'Inter', sans-serif; }
 <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
 
 <div class="md:w-1/2 space-y-6">
-<span class="bg-blue-500/30 px-3 py-1 rounded"></span>
+<span class="bg-blue-500/30 px-3 py-1 rounded">{{ data.hero.badge }}</span>
 
-<h1 class="text-5xl font-bold">Discover Your Next Great Read</h1>
+<h1 class="text-5xl font-bold">{{ data.hero.title | safe }}</h1>
 
-<p>Explore a curated collection of novels, academic books, and stationery.</p>
+<p>{{ data.hero.subtitle }}</p>
 
 <div>
 <button class="bg-white text-blue-600 px-6 py-3 rounded">
-
+{{ data.hero.primary_button }}
 </button>
 
 <button class="border px-6 py-3 rounded">
-
+{{ data.hero.secondary_button }}
 </button>
 </div>
 </div>
 
 <div class="md:w-1/2">
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80" class="rounded-xl shadow">
+<img src="{{ data.hero.image }}" class="rounded-xl shadow">
 </div>
 
 </div>
@@ -96,25 +94,13 @@ body { font-family: 'Inter', sans-serif; }
 <h2 class="text-3xl font-bold mb-8">Categories</h2>
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
+{% for cat in data.categories %}
 <div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Novels</h3>
-<p class="text-sm text-gray-400"></p>
+<i class="{{ cat.icon }} text-3xl text-blue-500"></i>
+<h3 class="font-bold mt-3">{{ cat.name }}</h3>
+<p class="text-sm text-gray-400">{{ cat.count }}</p>
 </div>
-
-<div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Academic Books</h3>
-<p class="text-sm text-gray-400"></p>
-</div>
-
-<div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Stationery</h3>
-<p class="text-sm text-gray-400"></p>
-</div>
-
+{% endfor %}
 </div>
 </section>
 
@@ -126,38 +112,40 @@ body { font-family: 'Inter', sans-serif; }
 
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-
+{% for p in data.products %}
 <div class="product-card bg-white rounded-xl overflow-hidden shadow relative">
 
 <!-- DISCOUNT -->
+{% if p.discount %}
+<span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2">
+{{ p.discount }}
+</span>
+{% endif %}
 
-
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=60" class="h-56 w-full object-cover">
+<img src="{{ p.image }}" class="h-56 w-full object-cover">
 
 <div class="p-4">
 
-<p class="text-xs text-blue-600">Novels</p>
+<p class="text-xs text-blue-600">{{ p.category }}</p>
 
-<h4 class="font-bold">The Great Gatsby</h4>
+<h4 class="font-bold">{{ p.name }}</h4>
 
 <!-- RATING -->
 <div class="text-yellow-400 text-sm">
-
+{% for i in range(p.rating | int) %}
 <i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
+{% endfor %}
 </div>
 
 <!-- PRICE -->
 <div class="mt-2">
-<span class="font-bold">$12.99</span>
+<span class="font-bold">${{ p.price }}</span>
 
-
+{% if p.original_price %}
+<span class="line-through text-gray-400 ml-2">
+${{ p.original_price }}
+</span>
+{% endif %}
 </div>
 
 <button class="w-full mt-3 bg-slate-800 text-white py-2 rounded">
@@ -166,47 +154,7 @@ Add to Cart
 
 </div>
 </div>
-
-<div class="product-card bg-white rounded-xl overflow-hidden shadow relative">
-
-<!-- DISCOUNT -->
-
-
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=60" class="h-56 w-full object-cover">
-
-<div class="p-4">
-
-<p class="text-xs text-blue-600">Academic Books</p>
-
-<h4 class="font-bold">Calculus Made Easy</h4>
-
-<!-- RATING -->
-<div class="text-yellow-400 text-sm">
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-</div>
-
-<!-- PRICE -->
-<div class="mt-2">
-<span class="font-bold">$18.5</span>
-
-
-</div>
-
-<button class="w-full mt-3 bg-slate-800 text-white py-2 rounded">
-Add to Cart
-</button>
-
-</div>
-</div>
-
+{% endfor %}
 
 </div>
 </div>
@@ -217,43 +165,27 @@ Add to Cart
 <div class="bg-slate-900 text-white p-10 rounded-xl">
 
 <h2 class="text-3xl font-bold mb-4">
-Our Services
+{{ data.services.title }}
 </h2>
 
 <p class="mb-6 text-gray-300">
-Book Haven offers a wide range of books and stationery to cater to all your reading and writing needs.
+{{ data.services.description }}
 </p>
 
 <ul class="space-y-2">
-
-<li>✔ Wide selection of novels</li>
-
-<li>✔ Academic resources for students</li>
-
-<li>✔ High-quality stationery supplies</li>
-
-<li>✔ Personalized book recommendations</li>
-
+{% for f in data.services.features %}
+<li>✔ {{ f }}</li>
+{% endfor %}
 </ul>
 
 <!-- STATS -->
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-
+{% for stat in data.services.stats %}
 <div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
+<h3 class="text-xl font-bold">{{ stat.value }}</h3>
+<p class="text-xs text-gray-400">{{ stat.label }}</p>
 </div>
-
-<div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
-</div>
-
-<div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
-</div>
-
+{% endfor %}
 </div>
 
 </div>
@@ -266,15 +198,15 @@ Book Haven offers a wide range of books and stationery to cater to all your read
 <h2 class="text-3xl font-bold mb-6">Hot Deals</h2>
 
 <div class="grid md:grid-cols-3 gap-6">
-
+{% for deal in data.deals %}
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold">Summer Reading Sale</h3>
-<p class="text-sm text-gray-500">Enjoy 20% off on all novels and academic books during our Summer Reading Sale.</p>
+<h3 class="font-bold">{{ deal.title }}</h3>
+<p class="text-sm text-gray-500">{{ deal.description }}</p>
 <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
 Grab Deal
 </button>
 </div>
-
+{% endfor %}
 </div>
 
 </div>
@@ -305,35 +237,31 @@ Subscribe
 <div class="container mx-auto px-4 grid md:grid-cols-4 gap-6">
 
 <div>
-<h3 class="font-bold">Book Haven</h3>
+<h3 class="font-bold">{{ data.brand.name }}</h3>
 <p class="text-sm text-gray-500">
-
+{{ data.footer.description }}
 </p>
 </div>
 
 <div>
 <h4 class="font-bold">Links</h4>
 <ul>
-
-<li>{'label': 'Home', 'link': '/'}</li>
-
-<li>{'label': 'Shop', 'link': '/shop'}</li>
-
-<li>{'label': 'About Us', 'link': '/about'}</li>
-
-<li>{'label': 'Contact', 'link': '/contact'}</li>
-
+{% for l in data.footer.links %}
+<li>{{ l }}</li>
+{% endfor %}
 </ul>
 </div>
 
 <div>
 <h4 class="font-bold">Social</h4>
-
+{% for s in data.footer.socials %}
+<a href="{{ s.url }}">{{ s.platform }}</a><br>
+{% endfor %}
 </div>
 
 <div>
 <h4 class="font-bold">Contact</h4>
-<p></p>
+<p>{{ data.footer.contact }}</p>
 </div>
 
 </div>

@@ -1,13 +1,24 @@
-from renderer import render_portfolio_site
+from renderer2 import render_store
 
 manual_json = {
-    "business_name": "Kelvin Cakes",
-    "tagline": "Fresh cakes made daily",
-    "services": ["Birthday Cakes", "Wedding Cakes", "Cupcakes"],
-    "city": "Chennai",
-    "email": "hello@kelvincakes.in",
-    "phone": "+91 9876543210"
+  "store_name": "Green Basket",
+  "tagline": "Fresh groceries delivered daily",
+  "categories": ["Fruits", "Vegetables", "Dairy", "Snacks"],
+  "banners": [
+    { "title": "Weekend Sale", "desc": "Up to 40% off" },
+    { "title": "Organic Picks", "desc": "Healthy & fresh" }
+  ],
+  "products": [
+    { "name": "Apples", "price": "$4", "img": "apple.jpg" },
+    { "name": "Milk", "price": "$2", "img": "milk.jpg" }
+  ],
+  "contact": {
+    "email": "shop@greenbasket.com",
+    "phone": "+123456789",
+    "city": "New York"
+  }
 }
 
-folder = render_portfolio_site(manual_json)
+
+folder = render_store(manual_json)
 print("HTML generated in:", folder)

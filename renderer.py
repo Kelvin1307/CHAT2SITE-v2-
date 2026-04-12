@@ -41,5 +41,7 @@ def render_portfolio_site(data: dict) -> str:
 
     with open(f"{output_dir}/index.html", "w", encoding="utf-8") as f:
         f.write(html)
-
+    
+    print(f"Site rendered to {output_dir}/index.html")
     return output_dir
+    

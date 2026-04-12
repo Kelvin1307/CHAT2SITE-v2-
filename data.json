@@ -1,0 +1,133 @@
+{
+  "brand": {
+    "name": "Kelvin Cakes"
+  },
+  "topbar": {
+    "message": "Delicious custom cakes for every occasion"
+  },
+  "cart": {
+    "count": 0
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "label": "About",
+      "link": "/about"
+    },
+    {
+      "label": "Products",
+      "link": "/products"
+    },
+    {
+      "label": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "hero": {
+    "title": "Taste the Celebration",
+    "subtitle": "Custom cakes crafted with love and precision",
+    "image": "https://example.com/images/hero-cake.jpg",
+    "cta": {
+      "text": "Explore Our Cakes",
+      "link": "/products"
+    }
+  },
+  "categories": [
+    {
+      "id": "cat1",
+      "name": "Wedding Cakes",
+      "image": "https://example.com/images/categories/wedding.jpg"
+    },
+    {
+      "id": "cat2",
+      "name": "Birthday Cakes",
+      "image": "https://example.com/images/categories/birthday.jpg"
+    },
+    {
+      "id": "cat3",
+      "name": "Corporate Cakes",
+      "image": "https://example.com/images/categories/corporate.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod1",
+      "name": "Classic Vanilla Wedding Cake",
+      "description": "A timeless vanilla sponge layered with buttercream, topped with fresh flowers.",
+      "price": 1200,
+      "currency": "INR",
+      "image": "https://example.com/images/products/vanilla-wedding.jpg",
+      "category": "Wedding Cakes",
+      "rating": 5,
+      "features": [
+        "Customizable tiers",
+        "Fresh ingredients",
+        "Same-day delivery"
+      ]
+    },
+    {
+      "id": "prod2",
+      "name": "Chocolate Birthday Cake",
+      "description": "Rich chocolate cake with silky ganache, perfect for birthdays of all ages.",
+      "price": 650,
+      "currency": "INR",
+      "image": "https://example.com/images/products/chocolate-birthday.jpg",
+      "category": "Birthday Cakes",
+      "rating": 4,
+      "features": [
+        "Gluten\u2011free option",
+        "Personalized messages",
+        "Fast delivery"
+      ]
+    }
+  ],
+  "services": {
+    "title": "Our Services",
+    "description": "We specialize in bespoke cake designs, catering to weddings, birthdays, and corporate events with premium quality and timely delivery.",
+    "features": [
+      "Custom design consultation",
+      "Premium ingredients sourcing",
+      "Professional delivery and setup",
+      "Flexible payment options"
+    ],
+    "stats": {
+      "cakes_baked": 1500,
+      "happy_customers": 1200,
+      "years_in_business": 5
+    }
+  },
+  "deals": [
+    {
+      "id": "deal1",
+      "title": "Summer Special",
+      "description": "Enjoy 10% off on all wedding cakes booked before July 31st.",
+      "valid_until": "2026-07-31",
+      "image": "https://example.com/images/deals/summer-special.jpg"
+    }
+  ],
+  "footer": {
+    "address": "123 Sweet Lane, Bakersville, 560001, India",
+    "contact": {
+      "phone": "+919999999999",
+      "email": "kelvin@email.com"
+    },
+    "social": [
+      {
+        "platform": "Facebook",
+        "link": "https://facebook.com/kelvincakes"
+      },
+      {
+        "platform": "Instagram",
+        "link": "https://instagram.com/kelvincakes"
+      },
+      {
+        "platform": "Twitter",
+        "link": "https://twitter.com/kelvincakes"
+      }
+    ],
+    "copyright": "\u00a9 2026 Kelvin Cakes. All rights reserved."
+  }
+}

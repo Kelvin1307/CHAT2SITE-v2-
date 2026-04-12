@@ -7,7 +7,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 llm = ChatGroq(
-    groq_api_key=os.getenv("GROQ_API_KEY"),
+    groq_api_key=os.getenv("GROQ_API_KEY2"),
     model_name="openai/gpt-oss-20b",
     temperature=0
 )
@@ -15,13 +15,18 @@ llm = ChatGroq(
 SYSTEM_PROMPT = """
 You are Chat2Site – Business Website Builder.
 
-From the given conversation, extract structured website data.
+Extract structured data from the conversation.
 
-Return ONLY valid JSON in this format:
+STRICT RULES:
+- Return ONLY JSON
+- Do NOT add explanations
+- Do NOT add text before or after JSON
+- Ensure valid JSON format (no trailing commas)
+
+Format:
 {
   "business_name": "",
   "business_type": "",
-  "tagline": "",
   "services": [],
   "city": "",
   "email": "",
