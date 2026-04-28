@@ -1,0 +1,11 @@
+[project]
+name = "tele-bot"
+version = "0.1.0"
+requires-python = "==3.11.9"
+dependencies = [
+    "python-telegram-bot",
+    "flask",  # or "fastapi" depending on your framework
+]
+
+[project.scripts]
+app = "tele:app"
