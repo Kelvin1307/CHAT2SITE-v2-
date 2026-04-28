@@ -1,3 +1,11 @@
 {
-  "builds": [{ "src": "tele.py", "use": "@vercel/python" }]
+  "builds": [
+    {
+      "src": "tele.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "tele.py" }
+  ]
 }
