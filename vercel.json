@@ -1,0 +1,3 @@
+{
+  "builds": [{ "src": "tele.py", "use": "@vercel/python" }]
+}
