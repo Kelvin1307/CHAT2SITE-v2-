@@ -1,5 +1,5 @@
 [project]
-name = "tele-bot"
+name = "chat2site"
 version = "0.1.0"
 requires-python = "==3.11.9"
 dependencies = [
