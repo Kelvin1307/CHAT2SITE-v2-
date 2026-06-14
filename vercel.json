@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "src": "tele.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.11" }
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "tele.py" }
+  ]
+}
