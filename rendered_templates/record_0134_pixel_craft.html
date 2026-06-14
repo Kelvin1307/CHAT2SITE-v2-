@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Craft — Design Studio in Bangalore</title>
+  <meta name="description" content="Pixel Craft is a Design Studio located in Bangalore. Contact us at pixelcraft.blr@gmail.com or 9008877665.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #0a0a0a;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 0 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      backdrop-filter: blur(10px);
+    }
+    .nav-brand {
+      font-size: 1.2rem; font-weight: 700;
+      color: #f0f0f0;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand::before {
+      content: '';
+      width: 10px; height: 10px;
+      background: #ffd700;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: #aaaaaa; text-decoration: none;
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #ffd700; }
+    .nav-cta {
+      background: #ffd700; color: #000;
+      padding: 8px 20px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* FOOTER */
+    footer {
+      background: rgba(255,215,0,0.07);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px;
+      text-align: center;
+    }
+    footer p { color: #aaaaaa; font-size: 0.875rem; margin-top: 8px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      section[class] { padding: 40px 20px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#">Pixel Craft</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:pixelcraft.blr@gmail.com">Contact Us</a>
+  </nav>
+
+
+  <section class="hero" style="background:linear-gradient(135deg,#0a0a0a,#1a1a00);padding:50px 60px;border-radius:0 0 24px 24px;margin-bottom:20px;">
+    <div style="max-width:700px;">
+      <span style="color:#ffd700;font-size:0.85rem;text-transform:uppercase;letter-spacing:3px;font-weight:700;">Design Studio</span>
+      <h1 style="color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);margin:10px 0 18px;line-height:1.2;">Pixel Craft</h1>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;color:rgba(255,255,255,0.8);font-size:0.95rem;">
+        <span>🗺️ Bangalore</span>
+        <span>🤙 9008877665</span>
+        <span>📩 pixelcraft.blr@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#0a0a0a;">
+    <h2 style="color:#ffd700;font-size:1.8rem;margin-bottom:8px;text-align:center;">What We Offer</h2>
+    <p style="color:#aaaaaa;text-align:center;margin-bottom:40px;font-size:0.95rem;">Expert services tailored to your needs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+      
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">UI design</p>
+      </div>
+      
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">UX research</p>
+      </div>
+      
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">Branding</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#0a0a0a;">
+    <h2 style="color:#ffd700;font-size:1.8rem;text-align:center;margin-bottom:40px;">Get In Touch</h2>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:800px;margin:0 auto;">
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🗺️</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Location</p>
+        <p style="color:#f0f0f0;font-weight:600;">Bangalore</p>
+      </div>
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🤙</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Phone</p>
+        <a href="tel:9008877665" style="color:#ffd700;font-weight:600;text-decoration:none;">9008877665</a>
+      </div>
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📩</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Email</p>
+        <a href="mailto:pixelcraft.blr@gmail.com" style="color:#ffd700;font-weight:600;text-decoration:none;word-break:break-all;">pixelcraft.blr@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:rgba(255,215,0,0.07);">
+    <div style="max-width:700px;margin:0 auto;text-align:center;">
+      <h2 style="color:#ffd700;font-size:1.8rem;margin-bottom:16px;">About Us</h2>
+      <p style="color:#aaaaaa;line-height:1.8;font-size:1rem;">
+        Pixel Craft is a trusted Design Studio based in Bangalore.
+        We are committed to delivering top-quality services to our clients every day.
+        Our team of professionals ensures that every client receives personalized attention and outstanding results.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong style="color:#f0f0f0;font-size:1.05rem;">Pixel Craft</strong>
+    <p>Design Studio &bull; Bangalore</p>
+    <p style="margin-top:16px;">
+      🤙 <a href="tel:9008877665" style="color:#ffd700;text-decoration:none;">9008877665</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      📩 <a href="mailto:pixelcraft.blr@gmail.com" style="color:#ffd700;text-decoration:none;">pixelcraft.blr@gmail.com</a>
+    </p>
+    <p style="margin-top:20px;">&copy; 2026 Pixel Craft. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

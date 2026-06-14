@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Gifts — Gift Shop in Pondicherry</title>
+  <meta name="description" content="Surprise Gifts is a Gift Shop located in Pondicherry. Contact us at surprisegifts@gmail.com or 9443322110.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: #eff6ff;
+      color: #111111;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #eff6ff;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 0 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      backdrop-filter: blur(10px);
+    }
+    .nav-brand {
+      font-size: 1.2rem; font-weight: 700;
+      color: #111111;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand::before {
+      content: '';
+      width: 10px; height: 10px;
+      background: #2563eb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: #555555; text-decoration: none;
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #2563eb; }
+    .nav-cta {
+      background: #2563eb; color: #fff;
+      padding: 8px 20px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* FOOTER */
+    footer {
+      background: #fff;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding: 40px;
+      text-align: center;
+    }
+    footer p { color: #555555; font-size: 0.875rem; margin-top: 8px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      section[class] { padding: 40px 20px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#">Surprise Gifts</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:surprisegifts@gmail.com">Contact Us</a>
+  </nav>
+
+
+  <section class="hero" style="background:linear-gradient(135deg,#1e3a8a,#bfdbfe);padding:60px 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:260px;">
+      <span style="background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:0.8rem;font-weight:600;">Gift Shop</span>
+      <h1 style="color:#fff;font-size:clamp(2rem,4vw,3rem);margin:20px 0 12px;">Surprise Gifts</h1>
+      <p style="color:rgba(255,255,255,0.75);line-height:1.7;">Based in Pondicherry — delivering quality services that matter.</p>
+    </div>
+    <div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:12px;">
+      <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:16px;color:#fff;">
+        ☎️ 9443322110
+      </div>
+      <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:16px;color:#fff;">
+        📨 surprisegifts@gmail.com
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#eff6ff;">
+    <h2 style="color:#2563eb;font-size:1.8rem;margin-bottom:8px;text-align:center;">What We Offer</h2>
+    <p style="color:#555555;text-align:center;margin-bottom:40px;font-size:0.95rem;">Expert services tailored to your needs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+      
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🛠️</div>
+        <p style="color:#111111;font-weight:600;font-size:0.95rem;">Gifts</p>
+      </div>
+      
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🛠️</div>
+        <p style="color:#111111;font-weight:600;font-size:0.95rem;">Toys</p>
+      </div>
+      
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🛠️</div>
+        <p style="color:#111111;font-weight:600;font-size:0.95rem;">Decorative items</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#fff;">
+    <div style="max-width:700px;margin:0 auto;text-align:center;">
+      <h2 style="color:#2563eb;font-size:1.8rem;margin-bottom:16px;">About Us</h2>
+      <p style="color:#555555;line-height:1.8;font-size:1rem;">
+        Surprise Gifts is a trusted Gift Shop based in Pondicherry.
+        We are committed to delivering top-quality services to our clients every day.
+        Our team of professionals ensures that every client receives personalized attention and outstanding results.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#eff6ff;">
+    <h2 style="color:#2563eb;font-size:1.8rem;text-align:center;margin-bottom:40px;">Get In Touch</h2>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:800px;margin:0 auto;">
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📌</div>
+        <p style="color:#555555;font-size:0.85rem;margin-bottom:6px;">Location</p>
+        <p style="color:#111111;font-weight:600;">Pondicherry</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">☎️</div>
+        <p style="color:#555555;font-size:0.85rem;margin-bottom:6px;">Phone</p>
+        <a href="tel:9443322110" style="color:#2563eb;font-weight:600;text-decoration:none;">9443322110</a>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📨</div>
+        <p style="color:#555555;font-size:0.85rem;margin-bottom:6px;">Email</p>
+        <a href="mailto:surprisegifts@gmail.com" style="color:#2563eb;font-weight:600;text-decoration:none;word-break:break-all;">surprisegifts@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong style="color:#111111;font-size:1.05rem;">Surprise Gifts</strong>
+    <p>Gift Shop &bull; Pondicherry</p>
+    <p style="margin-top:16px;">
+      ☎️ <a href="tel:9443322110" style="color:#2563eb;text-decoration:none;">9443322110</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      📨 <a href="mailto:surprisegifts@gmail.com" style="color:#2563eb;text-decoration:none;">surprisegifts@gmail.com</a>
+    </p>
+    <p style="margin-top:20px;">&copy; 2026 Surprise Gifts. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataNest — Tech Startup in Hyderabad</title>
+  <meta name="description" content="DataNest is a Tech Startup located in Hyderabad. Contact us at datanest@gmail.com or .">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background: #0a001f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #0a001f;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 0 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      backdrop-filter: blur(10px);
+    }
+    .nav-brand {
+      font-size: 1.2rem; font-weight: 700;
+      color: #f0f0f0;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand::before {
+      content: '';
+      width: 10px; height: 10px;
+      background: #c700ff;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: #aaaaaa; text-decoration: none;
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #c700ff; }
+    .nav-cta {
+      background: #c700ff; color: #fff;
+      padding: 8px 20px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* FOOTER */
+    footer {
+      background: rgba(199,0,255,0.07);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px;
+      text-align: center;
+    }
+    footer p { color: #aaaaaa; font-size: 0.875rem; margin-top: 8px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      section[class] { padding: 40px 20px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#">DataNest</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:datanest@gmail.com">Contact Us</a>
+  </nav>
+
+
+  <section class="hero" style="background:linear-gradient(135deg,#0a001f,#200040);padding:50px 60px;border-radius:0 0 24px 24px;margin-bottom:20px;">
+    <div style="max-width:700px;">
+      <span style="color:#c700ff;font-size:0.85rem;text-transform:uppercase;letter-spacing:3px;font-weight:700;">Tech Startup</span>
+      <h1 style="color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);margin:10px 0 18px;line-height:1.2;">DataNest</h1>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;color:rgba(255,255,255,0.8);font-size:0.95rem;">
+        <span>🗺️ Hyderabad</span>
+        <span>🤙 </span>
+        <span>📩 datanest@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#0a001f;">
+    <h2 style="color:#c700ff;font-size:1.8rem;margin-bottom:8px;text-align:center;">What We Offer</h2>
+    <p style="color:#aaaaaa;text-align:center;margin-bottom:40px;font-size:0.95rem;">Expert services tailored to your needs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+      
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">AI solutions</p>
+      </div>
+      
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">Data analytics</p>
+      </div>
+      
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">💼</div>
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">Automation</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:#0a001f;">
+    <h2 style="color:#c700ff;font-size:1.8rem;text-align:center;margin-bottom:40px;">Get In Touch</h2>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:800px;margin:0 auto;">
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🗺️</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Location</p>
+        <p style="color:#f0f0f0;font-weight:600;">Hyderabad</p>
+      </div>
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🤙</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Phone</p>
+        <a href="tel:" style="color:#c700ff;font-weight:600;text-decoration:none;"></a>
+      </div>
+      <div style="background:rgba(199,0,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📩</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Email</p>
+        <a href="mailto:datanest@gmail.com" style="color:#c700ff;font-weight:600;text-decoration:none;word-break:break-all;">datanest@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 40px;background:rgba(199,0,255,0.07);">
+    <div style="max-width:700px;margin:0 auto;text-align:center;">
+      <h2 style="color:#c700ff;font-size:1.8rem;margin-bottom:16px;">About Us</h2>
+      <p style="color:#aaaaaa;line-height:1.8;font-size:1rem;">
+        DataNest is a trusted Tech Startup based in Hyderabad.
+        We are committed to delivering top-quality services to our clients every day.
+        Our team of professionals ensures that every client receives personalized attention and outstanding results.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong style="color:#f0f0f0;font-size:1.05rem;">DataNest</strong>
+    <p>Tech Startup &bull; Hyderabad</p>
+    <p style="margin-top:16px;">
+      🤙 <a href="tel:" style="color:#c700ff;text-decoration:none;"></a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      📩 <a href="mailto:datanest@gmail.com" style="color:#c700ff;text-decoration:none;">datanest@gmail.com</a>
+    </p>
+    <p style="margin-top:20px;">&copy; 2026 DataNest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

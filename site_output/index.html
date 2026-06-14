@@ -1,343 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book Haven</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Spaces — interior design in Coimbatore</title>
+  <meta name="description" content="Dream Spaces is a interior design located in Coimbatore. Contact us at dreamspaces@gmail.com or 9123987654.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Playfair Display', system-ui, sans-serif;
+      background: #1a0a00;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #1a0a00;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 0 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      backdrop-filter: blur(10px);
+    }
+    .nav-brand {
+      font-size: 1.2rem; font-weight: 700;
+      color: #f0f0f0;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand::before {
+      content: '';
+      width: 10px; height: 10px;
+      background: #ff8c00;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: #aaaaaa; text-decoration: none;
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #ff8c00; }
+    .nav-cta {
+      background: #ff8c00; color: #fff;
+      padding: 8px 20px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
 
-<style>
-body { font-family: 'Inter', sans-serif; }
-.gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
-.product-card:hover { transform: translateY(-5px); transition: 0.3s; }
-</style>
+    /* FOOTER */
+    footer {
+      background: rgba(255,140,0,0.08);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px;
+      text-align: center;
+    }
+    footer p { color: #aaaaaa; font-size: 0.875rem; margin-top: 8px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      section[class] { padding: 40px 20px !important; }
+    }
+  </style>
 </head>
+<body>
 
-<body class="bg-gray-50">
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#">Dream Spaces</a>
+    <ul class="nav-links">
+      
+        
+        <li><a href="/home">Home</a></li>
+        
+        <li><a href="/services">Services</a></li>
+        
+        <li><a href="/portfolio">Portfolio</a></li>
+        
+        <li><a href="/contact">Contact</a></li>
+        
+      
+    </ul>
+    <a class="nav-cta" href="mailto:dreamspaces@gmail.com">Contact Us</a>
+  </nav>
 
-<!-- TOP BAR -->
-<div class="bg-slate-900 text-white text-xs py-2 px-4 flex justify-between">
-    <span>Welcome to Book Haven – Your Gateway to Knowledge</span>
-    <div>
-        <a href="#">Track</a>
-        <a href="#">Support</a>
+
+  <section class="hero" style="background:linear-gradient(135deg,#3d1a00,#ff8c00);padding:80px 60px;display:flex;align-items:center;gap:60px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:280px;">
+      <p class="badge" style="color:#ff8c00;text-transform:uppercase;letter-spacing:2px;font-size:0.85rem;font-weight:600;">interior design</p>
+      <h1 style="color:#fff;font-size:clamp(2.2rem,5vw,3.5rem);margin:16px 0;line-height:1.15;">Welcome to Dream Spaces</h1>
+      <p style="color:rgba(255,255,255,0.8);font-size:1rem;line-height:1.7;margin-bottom:32px;">
+        Your one-stop solution for all interior design needs
+      </p>
+      <a href="/contact" style="background:#ff8c00;color:#fff;padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;">Get Started</a>
     </div>
-</div>
-
-<!-- NAV -->
-<nav class="bg-white shadow sticky top-0 z-50">
-<div class="container mx-auto px-4 py-4 flex justify-between items-center">
-
-<div class="flex items-center space-x-2">
-<i class="fas fa-bolt text-blue-600"></i>
-<span class="font-bold text-xl">Book Haven</span>
-</div>
-
-<div class="hidden md:flex space-x-6">
-
-<a href="/"></a>
-
-<a href="/shop"></a>
-
-<a href="/about"></a>
-
-<a href="/contact"></a>
-
-</div>
-
-<div class="flex items-center space-x-4">
-
-<!-- SEARCH -->
-<input type="text" placeholder="Search..." class="border px-2 py-1 rounded">
-
-<!-- CART -->
-<div class="relative">
-<i class="fas fa-shopping-cart text-xl"></i>
-
-</div>
-
-</div>
-</div>
-</nav>
-
-<!-- HERO -->
-<section class="gradient-bg text-white py-20">
-<div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-
-<div class="md:w-1/2 space-y-6">
-<span class="bg-blue-500/30 px-3 py-1 rounded"></span>
-
-<h1 class="text-5xl font-bold">Discover Your Next Great Read</h1>
-
-<p>Explore a curated collection of novels, academic books, and stationery.</p>
-
-<div>
-<button class="bg-white text-blue-600 px-6 py-3 rounded">
-
-</button>
-
-<button class="border px-6 py-3 rounded">
-
-</button>
-</div>
-</div>
-
-<div class="md:w-1/2">
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80" class="rounded-xl shadow">
-</div>
-
-</div>
-</section>
-
-<!-- CATEGORIES -->
-<section class="py-16 container mx-auto px-4">
-<h2 class="text-3xl font-bold mb-8">Categories</h2>
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-<div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Novels</h3>
-<p class="text-sm text-gray-400"></p>
-</div>
-
-<div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Academic Books</h3>
-<p class="text-sm text-gray-400"></p>
-</div>
-
-<div class="bg-white p-6 rounded shadow text-center">
-<i class=" text-3xl text-blue-500"></i>
-<h3 class="font-bold mt-3">Stationery</h3>
-<p class="text-sm text-gray-400"></p>
-</div>
-
-</div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="bg-gray-100 py-16">
-<div class="container mx-auto px-4">
-
-<h2 class="text-3xl font-bold mb-10">Products</h2>
-
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-
-<div class="product-card bg-white rounded-xl overflow-hidden shadow relative">
-
-<!-- DISCOUNT -->
-
-
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=60" class="h-56 w-full object-cover">
-
-<div class="p-4">
-
-<p class="text-xs text-blue-600">Novels</p>
-
-<h4 class="font-bold">The Great Gatsby</h4>
-
-<!-- RATING -->
-<div class="text-yellow-400 text-sm">
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-</div>
-
-<!-- PRICE -->
-<div class="mt-2">
-<span class="font-bold">$12.99</span>
-
-
-</div>
-
-<button class="w-full mt-3 bg-slate-800 text-white py-2 rounded">
-Add to Cart
-</button>
-
-</div>
-</div>
-
-<div class="product-card bg-white rounded-xl overflow-hidden shadow relative">
-
-<!-- DISCOUNT -->
-
-
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=60" class="h-56 w-full object-cover">
-
-<div class="p-4">
-
-<p class="text-xs text-blue-600">Academic Books</p>
-
-<h4 class="font-bold">Calculus Made Easy</h4>
-
-<!-- RATING -->
-<div class="text-yellow-400 text-sm">
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-<i class="fas fa-star"></i>
-
-</div>
-
-<!-- PRICE -->
-<div class="mt-2">
-<span class="font-bold">$18.5</span>
-
-
-</div>
-
-<button class="w-full mt-3 bg-slate-800 text-white py-2 rounded">
-Add to Cart
-</button>
-
-</div>
-</div>
-
-
-</div>
-</div>
-</section>
-
-<!-- SERVICES -->
-<section class="py-20 container mx-auto px-4">
-<div class="bg-slate-900 text-white p-10 rounded-xl">
-
-<h2 class="text-3xl font-bold mb-4">
-Our Services
-</h2>
-
-<p class="mb-6 text-gray-300">
-Book Haven offers a wide range of books and stationery to cater to all your reading and writing needs.
-</p>
-
-<ul class="space-y-2">
-
-<li>✔ Wide selection of novels</li>
-
-<li>✔ Academic resources for students</li>
-
-<li>✔ High-quality stationery supplies</li>
-
-<li>✔ Personalized book recommendations</li>
-
-</ul>
-
-<!-- STATS -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-
-<div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
-</div>
-
-<div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
-</div>
-
-<div class="text-center">
-<h3 class="text-xl font-bold"></h3>
-<p class="text-xs text-gray-400"></p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- DEALS -->
-<section class="py-16 bg-blue-50">
-<div class="container mx-auto px-4">
-
-<h2 class="text-3xl font-bold mb-6">Hot Deals</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold">Summer Reading Sale</h3>
-<p class="text-sm text-gray-500">Enjoy 20% off on all novels and academic books during our Summer Reading Sale.</p>
-<button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
-Grab Deal
-</button>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="py-16">
-<div class="container mx-auto px-4 text-center">
-
-<h2 class="text-2xl font-bold mb-4">
-Subscribe Newsletter
-</h2>
-
-<form>
-<input type="email" placeholder="Email"
-class="border px-4 py-2 rounded w-64">
-
-<button class="bg-blue-600 text-white px-6 py-2 rounded ml-2">
-Subscribe
-</button>
-</form>
-
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-white border-t py-10">
-<div class="container mx-auto px-4 grid md:grid-cols-4 gap-6">
-
-<div>
-<h3 class="font-bold">Book Haven</h3>
-<p class="text-sm text-gray-500">
-
-</p>
-</div>
-
-<div>
-<h4 class="font-bold">Links</h4>
-<ul>
-
-<li>{'label': 'Home', 'link': '/'}</li>
-
-<li>{'label': 'Shop', 'link': '/shop'}</li>
-
-<li>{'label': 'About Us', 'link': '/about'}</li>
-
-<li>{'label': 'Contact', 'link': '/contact'}</li>
-
-</ul>
-</div>
-
-<div>
-<h4 class="font-bold">Social</h4>
-
-</div>
-
-<div>
-<h4 class="font-bold">Contact</h4>
-<p></p>
-</div>
-
-</div>
-</footer>
+    <div style="flex:0 0 260px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:28px;backdrop-filter:blur(8px);">
+      <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Quick Info</p>
+      <div style="color:#fff;display:flex;flex-direction:column;gap:10px;font-size:0.95rem;">
+        <span>📍 Coimbatore</span>
+        <span>📞 9123987654</span>
+        <span>✉️ dreamspaces@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  
+  <section style="padding:60px 40px;background:rgba(255,140,0,0.08);">
+    <h2 style="color:#ff8c00;font-size:1.8rem;margin-bottom:8px;text-align:center;">Categories</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px;max-width:900px;margin:24px auto 0;">
+      
+      <div style="background:#1a0a00;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px;text-align:center;">
+        
+        <img src="https://example.com/residential.jpg" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+        
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.9rem;">Residential</p>
+      </div>
+      
+      <div style="background:#1a0a00;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px;text-align:center;">
+        
+        <img src="https://example.com/commercial.jpg" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+        
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.9rem;">Commercial</p>
+      </div>
+      
+      <div style="background:#1a0a00;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px;text-align:center;">
+        
+        <img src="https://example.com/modular-kitchens.jpg" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+        
+        <p style="color:#f0f0f0;font-weight:600;font-size:0.9rem;">Modular Kitchens</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section style="padding:60px 40px;background:#1a0a00;">
+    <h2 style="color:#ff8c00;font-size:1.8rem;margin-bottom:8px;text-align:center;">Our Products</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px;max-width:1000px;margin:24px auto 0;">
+      
+      <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+        
+        <img src="https://example.com/wardrobe.jpg" style="width:100%;height:180px;object-fit:cover;" />
+        
+        <div style="padding:16px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+          <span style="font-size:0.75rem;color:#ff8c00;text-transform:uppercase;">Residential</span>
+          <h3 style="color:#f0f0f0;font-size:1.05rem;font-weight:600;margin:0;">Customized Wardrobe</h3>
+          <p style="color:#aaaaaa;font-size:0.85rem;line-height:1.4;margin:0;flex-grow:1;">Get a customized wardrobe designed to fit your needs</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">
+            <span style="font-weight:700;color:#f0f0f0;">INR5000</span>
+            
+            <span style="color:#ffd700;font-size:0.9rem;">★ 4.5</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+        
+        <img src="https://example.com/office-furniture.jpg" style="width:100%;height:180px;object-fit:cover;" />
+        
+        <div style="padding:16px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+          <span style="font-size:0.75rem;color:#ff8c00;text-transform:uppercase;">Commercial</span>
+          <h3 style="color:#f0f0f0;font-size:1.05rem;font-weight:600;margin:0;">Office Furniture</h3>
+          <p style="color:#aaaaaa;font-size:0.85rem;line-height:1.4;margin:0;flex-grow:1;">Get the best office furniture for your workspace</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">
+            <span style="font-weight:700;color:#f0f0f0;">INR10000</span>
+            
+            <span style="color:#ffd700;font-size:0.9rem;">★ 4.8</span>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <section style="padding:60px 40px;background:#1a0a00;">
+    <h2 style="color:#ff8c00;font-size:1.8rem;margin-bottom:8px;text-align:center;">What We Offer</h2>
+    <p style="color:#aaaaaa;text-align:center;margin-bottom:40px;font-size:0.95rem;">Expert services tailored to your needs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+      
+        
+        <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:12px;">🔧</div>
+          <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">home design</p>
+        </div>
+        
+        <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:12px;">🔧</div>
+          <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">office design</p>
+        </div>
+        
+        <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:12px;">🔧</div>
+          <p style="color:#f0f0f0;font-weight:600;font-size:0.95rem;">modular kitchen design</p>
+        </div>
+        
+      
+    </div>
+    
+  </section>
+
+  
+  <section style="padding:60px 40px;background:rgba(255,140,0,0.08);">
+    <h2 style="color:#ff8c00;font-size:1.8rem;text-align:center;margin-bottom:8px;">Special Deals</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;max-width:900px;margin:24px auto 0;">
+      
+      <div style="background:#1a0a00;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;">
+        
+        <span style="position:absolute;top:12px;right:12px;background:#e53935;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75rem;font-weight:700;">
+          10% OFF
+        </span>
+        
+        <h3 style="color:#f0f0f0;font-size:1.1rem;font-weight:600;margin:0 60px 0 0;">Summer Sale</h3>
+        <p style="color:#aaaaaa;font-size:0.85rem;line-height:1.4;margin:0;">Get 10% off on all services this summer</p>
+        
+        <img src="https://example.com/summer-sale.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
+        
+      </div>
+      
+      <div style="background:#1a0a00;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;">
+        
+        <span style="position:absolute;top:12px;right:12px;background:#e53935;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75rem;font-weight:700;">
+          5% OFF
+        </span>
+        
+        <h3 style="color:#f0f0f0;font-size:1.1rem;font-weight:600;margin:0 60px 0 0;">Referral Program</h3>
+        <p style="color:#aaaaaa;font-size:0.85rem;line-height:1.4;margin:0;">Refer a friend and get 5% off on your next service</p>
+        
+        <img src="https://example.com/referral-program.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <section style="padding:60px 40px;background:#1a0a00;">
+    <h2 style="color:#ff8c00;font-size:1.8rem;text-align:center;margin-bottom:40px;">Get In Touch</h2>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:800px;margin:0 auto;">
+      <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📍</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Location</p>
+        <p style="color:#f0f0f0;font-weight:600;">Coimbatore</p>
+      </div>
+      <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📞</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Phone</p>
+        <a href="tel:9123987654" style="color:#ff8c00;font-weight:600;text-decoration:none;">9123987654</a>
+      </div>
+      <div style="background:rgba(255,140,0,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;flex:1;min-width:200px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">✉️</div>
+        <p style="color:#aaaaaa;font-size:0.85rem;margin-bottom:6px;">Email</p>
+        <a href="mailto:dreamspaces@gmail.com" style="color:#ff8c00;font-weight:600;text-decoration:none;word-break:break-all;">dreamspaces@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong style="color:#f0f0f0;font-size:1.05rem;">Dream Spaces</strong>
+    
+    <p style="max-width:600px;margin:10px auto;line-height:1.6;color:#aaaaaa;font-size:0.9rem;">Dream Spaces is a leading interior design firm based in Coimbatore. We offer a wide range of services to fit your needs.</p>
+    
+    <p style="margin-top:8px;">interior design &bull; Coimbatore</p>
+    <p style="margin-top:16px;">
+      📞 <a href="tel:9123987654" style="color:#ff8c00;text-decoration:none;">9123987654</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      ✉️ <a href="mailto:dreamspaces@gmail.com" style="color:#ff8c00;text-decoration:none;">dreamspaces@gmail.com</a>
+    </p>
+    
+    
+    
+    <p style="margin-top:12px;">
+      
+      
+      <a href="#" style="color:#ff8c00;text-decoration:none;margin:0 8px;">{&#39;label&#39;: &#39;Facebook&#39;, &#39;link&#39;: &#39;https://www.facebook.com/dreamspaces&#39;}</a>
+      
+      
+      
+      <a href="#" style="color:#ff8c00;text-decoration:none;margin:0 8px;">{&#39;label&#39;: &#39;Instagram&#39;, &#39;link&#39;: &#39;https://www.instagram.com/dreamspaces&#39;}</a>
+      
+      
+      
+      <a href="#" style="color:#ff8c00;text-decoration:none;margin:0 8px;">{&#39;label&#39;: &#39;Twitter&#39;, &#39;link&#39;: &#39;https://www.twitter.com/dreamspaces&#39;}</a>
+      
+      
+    </p>
+    
+    
+    <p style="margin-top:20px;">2024 Dream Spaces. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

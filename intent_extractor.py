@@ -1,3 +1,4 @@
+# intent_extractor.py
 import os
 import json
 import re
@@ -8,46 +9,52 @@ load_dotenv()
 
 llm = ChatGroq(
     groq_api_key=os.getenv("GROQ_API_KEY"),
-    model_name="openai/gpt-oss-20b",
-    temperature=0
+    model_name="llama-3.3-70b-versatile",   # was openai/gpt-oss-20b
+    temperature=0,
 )
 
-INTENT_PROMPT = """
-Extract high-level intent and key business information.
+INTENT_PROMPT = """Extract high-level intent and key business information from the conversation.
 
 STRICT RULES:
-- Return ONLY JSON
-- No explanations
+- Return ONLY valid JSON — no explanations, no markdown.
+- For style_hint: summarise any colour/design preference in a short phrase. Set "" if none mentioned.
 
-Format:
+Return JSON in this exact format:
 {
   "intent": "business_setup",
   "business_type": "",
   "core_services": [],
   "city": "",
-  "contact_present": true
+  "contact_present": true,
+  "style_hint": ""
 }
 """
 
-def safe_parse(output):
+
+def safe_parse(output: str) -> dict:
     output = output.replace("```json", "").replace("```", "").strip()
     match = re.search(r"\{.*\}", output, re.DOTALL)
     if not match:
         return {}
     try:
         return json.loads(match.group())
-    except:
+    except json.JSONDecodeError:
         return {}
+
 
 def extract_intent(conversation: list) -> dict:
     text = "\n".join(conversation)
 
-    prompt = f"""
-{INTENT_PROMPT}
+    prompt = f"""{INTENT_PROMPT}
 
 Conversation:
 {text}
 """
 
     response = llm.invoke(prompt)
-    return safe_parse(response.content)
+    content = response.content.strip()
+
+    try:
+        return json.loads(content)
+    except Exception:
+        return safe_parse(content)

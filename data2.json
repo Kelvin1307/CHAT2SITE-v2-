@@ -1,6 +1,15 @@
 {
+  "business_name": "",
+  "business_type": "",
+  "services": [],
+  "city": "",
+  "email": "",
+  "phone": "",
+  "color_theme": "",
+  "design_style": "",
   "brand": {
-    "name": ""
+    "name": "",
+    "tagline": ""
   },
   "topbar": {
     "message": ""
@@ -45,14 +54,14 @@
       ]
     }
   ],
-  "services": {
+  "services_section": {
     "title": "",
     "description": "",
     "features": [
       ""
     ],
     "stats": {
-      "cakes_baked": 0,
+      "clients_served": 0,
       "happy_customers": 0,
       "years_in_business": 0
     }
